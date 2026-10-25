@@ -1,0 +1,31 @@
+<!-- LTeX: language=en-US -->
+# Organization of the Seminar {-}
+
+### Timetable {-} 
+
+```{r, echo=FALSE}
+suppressPackageStartupMessages(library("kableExtra"))
+suppressPackageStartupMessages(library("tidyverse"))
+
+timetable <- tibble("Event"   = c("Kick-off Meeting", "Presentations"),
+                    "Day"     = c("TBA",              "TBA"), 
+                    "Time"    = c("TBA",              "TBA"),
+                    "Room"    = c("TBA",              "TBA"))
+           
+timetable %>% kbl() %>%  kable_styling()
+```
+
+### Zoom Room {-}
+
+* TBA
+
+
+### Seminar Material {-}
+
+* This online script
+* TBA
+
+### Literature {-}
+
+* TBA
+
