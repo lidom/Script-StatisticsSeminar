@@ -7,25 +7,25 @@
 suppressPackageStartupMessages(library("kableExtra"))
 suppressPackageStartupMessages(library("tidyverse"))
 
-timetable <- tibble("Event"   = c("Kick-off Meeting", "Presentations"),
-                    "Day"     = c("TBA",              "TBA"), 
-                    "Time"    = c("TBA",              "TBA"),
-                    "Room"    = c("TBA",              "TBA"))
+timetable <- tibble("Event"   = c("Kick-off Meeting", "Regular Meetings", "Presentations"),
+                    "Day"     = c("Mo. November 9",   "Monday",           "Dates: TBA"), 
+                    "Time"    = c("9:15-12:45",       "9:15-12:45",  "9:15-12:45"),
+                    "Room"    = c("HB-108",           "HB-108",      "HB-108"))
            
 timetable %>% kbl() %>%  kable_styling()
 ```
 
-### Zoom Room {-}
+#### Zoom Room {-}
 
 * TBA
 
 
-### Seminar Material {-}
+#### Seminar Material {-}
 
 * This online script
 * TBA
 
-### Literature {-}
+#### Literature {-}
 
 * TBA
 
