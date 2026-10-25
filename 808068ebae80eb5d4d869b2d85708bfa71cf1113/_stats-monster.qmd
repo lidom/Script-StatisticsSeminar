@@ -4,6 +4,8 @@
 <figure class="stats-monster">
 <svg viewBox="0 0 430 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animation: streams of data rain into the head of a Frankenstein monster; its head fills up, its eye lights up, and it shuffles off like a zombie, arms stretched out">
   <style>
+/* Self-contained accent colour, so the SVG does not depend on a cached site stylesheet */
+.accent  { color: var(--bs-primary, #388e00); }
 .walker  { animation: walk 9s linear infinite; }
 .body    { animation: sway 9s linear infinite; transform-box: fill-box; transform-origin: 50% 100%; }
 .leg1    { animation: leg1 9s linear infinite; transform-box: fill-box; transform-origin: 50% 0%; }

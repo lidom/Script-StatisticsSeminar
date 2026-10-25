@@ -24,6 +24,8 @@ sway = [(0, "transform: rotate(0deg)"), (40, "transform: rotate(0deg)")] + \
        [(p, f"transform: rotate({v}deg)") for p, v in steps(42, 90, 12, 4, -2)] + \
        [(92, "transform: rotate(0deg)"), (100, "transform: rotate(0deg)")]
 css = f"""
+/* Self-contained accent colour, so the SVG does not depend on a cached site stylesheet */
+.accent  {{ color: var(--bs-primary, #388e00); }}
 .walker  {{ animation: walk {T}s linear infinite; }}
 .body    {{ animation: sway {T}s linear infinite; transform-box: fill-box; transform-origin: 50% 100%; }}
 .leg1    {{ animation: leg1 {T}s linear infinite; transform-box: fill-box; transform-origin: 50% 0%; }}

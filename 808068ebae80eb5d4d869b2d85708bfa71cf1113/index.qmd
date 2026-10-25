@@ -4,7 +4,8 @@
 ::: {.epigraph}
 "Learn from me, if not by my precepts, at least by my example, how dangerous is the acquirement of knowledge."
 
-— Victor Frankenstein, student at Ingolstadt (Mary Shelley, *Frankenstein*; or, The Modern Prometheus, 1818, Vol. I, Ch. IV)
+— Victor Frankenstein, student at Ingolstadt<br>
+Mary Shelley, *Frankenstein; or, The Modern Prometheus* (1818), Vol. I, Ch. IV
 :::
 
 Victor Frankenstein did not fail because his creation was weak. He failed because he brought it to life without fully understanding it, and then walked away from it.
