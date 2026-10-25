@@ -1,0 +1,78 @@
+<!-- LTeX: language=en-US -->
+# Writing the Seminar Thesis {#sec-thesis}
+
+Your seminar thesis is a lab report on one statistical method. Its goal is to show that you have become a knowledgeable user of this method: you know what it assumes, how it works, how to run it, and, most importantly, when it turns on you.
+
+Structure your thesis along the anatomy of your method.
+
+---
+
+## The Skeleton: Assumptions
+
+::: {.skeleton}
+State the statistical model and all assumptions under which the method is justified.
+:::
+
+::: {.spaced-list}
+* Describe the setting: What kind of data? What is the parameter of interest $\theta$?
+* State the assumptions precisely, e.g., i.i.d. sampling, moment conditions, distributional assumptions, model specification, sample size requirements.
+* For each assumption, explain in words what it means and *why* the method needs it. Where in the derivation or proof is it used?
+* Discuss whether the assumptions are plausible in typical applications.
+:::
+
+## The Organs: How the Method Works
+
+::: {.organs}
+Explain the mechanics of the method: the estimator, test, or algorithm and its theoretical properties.
+:::
+
+::: {.spaced-list}
+* Define the method formally and give the intuition behind it.
+* State the main theoretical results (e.g., unbiasedness, consistency, asymptotic distribution, size and power of a test) and explain where the assumptions enter.
+* Use a simple example to illustrate how the method works.
+:::
+
+## The Spark: Bringing It to Life in Code
+
+::: {.spark}
+Implement the method and apply it, so that the reader sees it working.
+:::
+
+::: {.spaced-list}
+* Show how to apply the method in R or Python. Implementing core parts yourself is the best way to understand them.
+* Apply the method to a (real or simulated) data example and interpret the results carefully.
+:::
+
+## When It Turns on You: Failure Investigations
+
+::: {.monster}
+Use Monte Carlo simulations to investigate when the method works, and how it fails when its assumptions are violated.
+:::
+
+This is the core of your thesis. Design your simulation study like an experiment:
+
+::: {.spaced-list}
+* **Baseline.** Start with a data generating process under which *all* assumptions hold. Check that the method behaves as the theory predicts.
+* **Violate one assumption at a time.** Change the data generating process so that exactly one assumption breaks (e.g., heavy tails, heteroskedasticity, dependence, misspecification, small samples). This way, you know which assumption is responsible for a failure.
+* **Vary the severity.** Let the violation range from mild to severe, and vary the sample size $n$. Does the failure vanish as $n$ grows, or does it persist?
+* **Measure the damage.** Choose performance measures that fit your method, for instance:
+  * estimators: bias, variance, and mean squared error,
+  * confidence intervals: coverage probability and average length,
+  * tests: empirical size and power.
+* **Make it reproducible.** Use enough Monte Carlo replications, set a random seed, and include your code.
+* **Report clearly.** Summarize the results in tables and plots, and interpret them: When can a user safely rely on the method? What warning signs should a user look for in practice?
+:::
+
+---
+
+## Formalities
+
+* **Length:** 15–20 pages main text, including figures and tables; excluding title page, table of contents, references, and appendix.
+* **Format:** 12 pt font, 1.5 line spacing, 2.5 cm margins, submitted as a PDF.
+* **Code:** Code does not belong in the main text. Show only short snippets that help the reader understand the method. Submit your full code separately, such that all results can be reproduced (fixed random seed).
+* **Submission:** `thesis.pdf` and a ZIP file with your complete thesis folder (text, code, and literature).
+* **Submission deadline:** TBA
+
+### Thesis Template {-}
+
+Download the [Quarto thesis template](thesis-template.zip). It already implements all formal requirements and renders to PDF. It also shows how to keep code out of the PDF: the method is implemented in `R/functions.R`, the simulation study in `R/simulation.R`, and `thesis.qmd` only reads the saved simulation results to show tables and figures. See the included `README.md` for details.

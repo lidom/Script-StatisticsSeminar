@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Fira+Mono&display=swap');
 
 /*-- scss:defaults --*/
-// Base document colors
-$primary: #388e00;
+$primary: #388e00 !default;          // galvanic green
+$monster-color: #8b1e1e !default;
 $link-color: $primary;
+$font-family-sans-serif: "Crimson Pro", Georgia, serif;
+$font-family-monospace: "Fira Mono", monospace;
+$headings-font-family: "Fira Mono", monospace;
+$font-size-base: 1.1rem;
 
+/*-- scss:rules --*/
 img {
   max-width: 100%;
 }
 
-/*-- scss:rules --*/
 // More vertical space between list items; use via ::: {.spaced-list}
 .spaced-list li {
   margin-bottom: 0.9em;
@@ -17,4 +21,105 @@ img {
 .spaced-list li li {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+// Lab-notebook numbering: "Experiment No. 1" in chapter titles
+h1.title .chapter-number::before {
+  content: "Experiment No. ";
+}
+h1.title:has(.chapter-number),
+h1.title .quarto-section-identifier {
+  font-size: 0;  // hides the &nbsp; between number and title
+}
+h1.title .chapter-number {
+  display: block;
+  font-size: 1rem;
+  color: $primary;
+  margin-bottom: 0.3em;
+}
+h1.title .chapter-title {
+  font-size: $h1-font-size;
+}
+
+// Epigraph; use via ::: {.epigraph}
+.epigraph {
+  font-style: italic;
+  max-width: 34em;
+  margin: 2em auto;
+  padding-left: 1em;
+  border-left: 2px dashed $primary;
+}
+.epigraph p:last-child {
+  font-style: normal;
+  font-size: 0.9em;
+  text-align: right;
+}
+
+// Tagline; use via ::: {.tagline}
+.tagline {
+  font-family: $font-family-monospace;
+  font-size: 1.05em;
+  text-align: center;
+  margin: 2em 0;
+}
+
+// Sutures instead of plain rules
+hr {
+  border: 0;
+  opacity: 1;
+  text-align: center;
+  overflow: visible;
+}
+hr::after {
+  content: "—+—+—+—+—";
+  color: $primary;
+  letter-spacing: 0.3em;
+}
+
+// Anatomy of a method; use via ::: {.skeleton}, {.organs}, {.spark}, {.monster}
+.skeleton, .organs, .spark, .monster {
+  border: 1px dashed $primary;
+  padding: 0.8em 1em;
+  margin: 1.2em 0;
+}
+.skeleton::before, .organs::before, .spark::before, .monster::before {
+  display: block;
+  font-family: $font-family-monospace;
+  font-size: 0.85em;
+  color: $primary;
+  margin-bottom: 0.4em;
+}
+.skeleton::before { content: "🦴 Skeleton: the assumptions"; }
+.organs::before   { content: "🫀 Organs: how the method works"; }
+.spark::before    { content: "⚡ Spark: bringing it to life in code"; }
+.monster {
+  border-color: $monster-color;
+}
+.monster::before {
+  content: "🧟 When it turns on you";
+  color: $monster-color;
+}
+.skeleton > :last-child, .organs > :last-child,
+.spark > :last-child, .monster > :last-child {
+  margin-bottom: 0;
+}
+
+// The stats monster on the landing page
+.stats-monster {
+  text-align: center;
+  margin: 2em auto 0;
+}
+.stats-monster svg {
+  width: 520px;
+  max-width: 100%;
+  height: auto;
+}
+.stats-monster .accent {
+  color: $primary;
+}
+.stats-monster figcaption {
+  font-family: $font-family-monospace;
+  font-size: 0.8em;
+  margin-top: 0.8em;
+  opacity: 0.75;
 }

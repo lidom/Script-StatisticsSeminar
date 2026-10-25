@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: docs
+  resources:
+    - thesis-template.zip
   
 book:
   title: Statistics Seminar
@@ -13,14 +15,17 @@ book:
   search: true
   chapters:
     - index.qmd
+    - 01-Monte-Carlo.qmd
+    - 02-Topics.qmd
+    - 03-Seminar-Thesis.qmd
 
 bibliography: references.bib
 
 format:
   html:
     theme:
-      light: [flatly, theme.scss]
-      dark: [flatly, darkly, theme.scss]
+      light: [flatly, theme-light.scss, theme.scss]
+      dark: [flatly, darkly, theme-dark.scss, theme.scss]
     html-math-method:
       method: mathjax
       url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML"

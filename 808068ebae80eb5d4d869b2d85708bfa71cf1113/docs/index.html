@@ -27,6 +27,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./01-Monte-Carlo.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -72,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Organization of the Seminar</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome to the Lab</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -101,7 +102,25 @@ ul.task-list li input[type="checkbox"] {
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Organization of the Seminar</span></a>
+ <span class="menu-text">Welcome to the Lab</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-Monte-Carlo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Monte Carlo Simulations: The Laboratory</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-Topics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Topics: The Specimens</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-Seminar-Thesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis</span></span></a>
   </div>
 </li>
     </ul>
@@ -113,9 +132,15 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
 <li>
-<a href="#organization-of-the-seminar" id="toc-organization-of-the-seminar" class="nav-link active" data-scroll-target="#organization-of-the-seminar">Organization of the Seminar</a>
+<a href="#welcome-to-the-lab" id="toc-welcome-to-the-lab" class="nav-link active" data-scroll-target="#welcome-to-the-lab">Welcome to the Lab</a>
+  <ul class="collapse">
+<li>
+<a href="#lab-protocol" id="toc-lab-protocol" class="nav-link" data-scroll-target="#lab-protocol">Lab Protocol</a>
   <ul class="collapse">
 <li><a href="#timetable" id="toc-timetable" class="nav-link" data-scroll-target="#timetable">Timetable</a></li>
+  <li><a href="#lab-rules" id="toc-lab-rules" class="nav-link" data-scroll-target="#lab-rules">Lab Rules</a></li>
+  </ul>
+</li>
   </ul>
 </li>
   </ul></nav>
@@ -148,7 +173,153 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><!-- LTeX: language=en-US --><section id="organization-of-the-seminar" class="level1 unnumbered"><h1 class="unnumbered">Organization of the Seminar</h1>
+</header><!-- LTeX: language=en-US --><section id="welcome-to-the-lab" class="level1 unnumbered"><h1 class="unnumbered">Welcome to the Lab</h1>
+<div class="epigraph">
+<p>“Learn from me, if not by my precepts, at least by my example, how dangerous is the acquirement of knowledge.”</p>
+<p>— Victor Frankenstein, student at Ingolstadt (Mary Shelley, <em>Frankenstein</em>; or, The Modern Prometheus, 1818, Vol. I, Ch. IV)</p>
+</div>
+<p>Victor Frankenstein did not fail because his creation was weak. He failed because he brought it to life without fully understanding it, and then walked away from it.</p>
+<p>Statistical methods are no different. Software makes it easy to stitch together an estimator, a test, and a p-value, and to throw the switch. But a method applied without understanding its assumptions, its mechanics, and its failure modes will sooner or later turn against its user.</p>
+<!-- The walking stats monster: animated inline SVG (generated by images/gen_walker.py).
+     The previous, static spooky monster is in _stats-monster-spooky.qmd. -->
+<figure class="stats-monster figure"><svg viewbox="0 0 430 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animation: streams of data rain into the head of a Frankenstein monster; its head fills up, its eye lights up, and it shuffles off like a zombie, arms stretched out"><style>
+.walker  { animation: walk 9s linear infinite; }
+.body    { animation: sway 9s linear infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+.leg1    { animation: leg1 9s linear infinite; transform-box: fill-box; transform-origin: 50% 0%; }
+.leg2    { animation: leg2 9s linear infinite; transform-box: fill-box; transform-origin: 50% 0%; }
+.rain    { animation: rain 9s linear infinite; }
+.rain.r2 { animation-name: rain2; }
+.rain.r3 { animation-name: rain3; }
+.stream  { animation: stream 9s linear infinite; stroke-dasharray: 2 5; }
+.brain   { animation: brain 9s linear infinite; }
+.eye     { animation: eye 9s steps(1) infinite; }
+.zap     { animation: zap 9s steps(1) infinite; }
+@keyframes walk {
+  0.0% { transform: translateX(0); opacity: 1 }
+  40.0% { transform: translateX(0); opacity: 1 }
+  90.0% { transform: translateX(250px); opacity: 1 }
+  95.0% { transform: translateX(262px); opacity: 0 }
+  99.0% { transform: translateX(0); opacity: 0 }
+  100.0% { transform: translateX(0); opacity: 1 }
+}
+@keyframes sway {
+  0.0% { transform: rotate(0deg) }
+  40.0% { transform: rotate(0deg) }
+  42.0% { transform: rotate(4deg) }
+  46.0% { transform: rotate(-2deg) }
+  50.0% { transform: rotate(4deg) }
+  54.0% { transform: rotate(-2deg) }
+  58.0% { transform: rotate(4deg) }
+  62.0% { transform: rotate(-2deg) }
+  66.0% { transform: rotate(4deg) }
+  70.0% { transform: rotate(-2deg) }
+  74.0% { transform: rotate(4deg) }
+  78.0% { transform: rotate(-2deg) }
+  82.0% { transform: rotate(4deg) }
+  86.0% { transform: rotate(-2deg) }
+  90.0% { transform: rotate(4deg) }
+  92.0% { transform: rotate(0deg) }
+  100.0% { transform: rotate(0deg) }
+}
+@keyframes leg1 {
+  0.0% { transform: rotate(0deg) }
+  40.0% { transform: rotate(0deg) }
+  42.0% { transform: rotate(22deg) }
+  46.0% { transform: rotate(-22deg) }
+  50.0% { transform: rotate(22deg) }
+  54.0% { transform: rotate(-22deg) }
+  58.0% { transform: rotate(22deg) }
+  62.0% { transform: rotate(-22deg) }
+  66.0% { transform: rotate(22deg) }
+  70.0% { transform: rotate(-22deg) }
+  74.0% { transform: rotate(22deg) }
+  78.0% { transform: rotate(-22deg) }
+  82.0% { transform: rotate(22deg) }
+  86.0% { transform: rotate(-22deg) }
+  90.0% { transform: rotate(22deg) }
+  92.0% { transform: rotate(0deg) }
+  100.0% { transform: rotate(0deg) }
+}
+@keyframes leg2 {
+  0.0% { transform: rotate(0deg) }
+  40.0% { transform: rotate(0deg) }
+  42.0% { transform: rotate(-22deg) }
+  46.0% { transform: rotate(22deg) }
+  50.0% { transform: rotate(-22deg) }
+  54.0% { transform: rotate(22deg) }
+  58.0% { transform: rotate(-22deg) }
+  62.0% { transform: rotate(22deg) }
+  66.0% { transform: rotate(-22deg) }
+  70.0% { transform: rotate(22deg) }
+  74.0% { transform: rotate(-22deg) }
+  78.0% { transform: rotate(22deg) }
+  82.0% { transform: rotate(-22deg) }
+  86.0% { transform: rotate(22deg) }
+  90.0% { transform: rotate(-22deg) }
+  92.0% { transform: rotate(0deg) }
+  100.0% { transform: rotate(0deg) }
+}
+@keyframes rain {
+  0.0% { transform: translateY(-150px) }
+  35.0% { transform: translateY(45px) }
+  100.0% { transform: translateY(45px) }
+}
+@keyframes rain2 {
+  0.0% { transform: translateY(-170px) }
+  35.0% { transform: translateY(50px) }
+  100.0% { transform: translateY(50px) }
+}
+@keyframes rain3 {
+  0.0% { transform: translateY(-140px) }
+  35.0% { transform: translateY(48px) }
+  100.0% { transform: translateY(48px) }
+}
+@keyframes stream {
+  0.0% { stroke-dashoffset: 0; opacity: 0.6 }
+  35.0% { stroke-dashoffset: -40; opacity: 0.6 }
+  40.0% { stroke-dashoffset: -46; opacity: 0 }
+  97.0% { opacity: 0 }
+  100.0% { stroke-dashoffset: 0; opacity: 0.6 }
+}
+@keyframes brain {
+  0.0% { opacity: 0 }
+  35.0% { opacity: 0.35 }
+  92.0% { opacity: 0.35 }
+  100.0% { opacity: 0 }
+}
+@keyframes eye {
+  0.0% { fill: transparent }
+  36.0% { fill: currentColor }
+  95.0% { fill: transparent }
+}
+@keyframes zap {
+  0.0% { opacity: 0 }
+  36.0% { opacity: 1 }
+  40.0% { opacity: 0 }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stats-monster * { animation: none !important; }
+  .rain { transform: translateY(-75px); }
+}
+</style>
+<defs><clippath id="sky"><rect x="0" y="0" width="140" height="41"></rect></clippath></defs><!-- ground --><path d="M10 204 H420" stroke="currentColor" stroke-width="1.5" stroke-dasharray="1 6" stroke-linecap="round"></path><!-- data streams raining into the head --><g class="accent" fill="currentColor" font-family="Fira Mono, monospace" clip-path="url(#sky)"><g stroke="currentColor" stroke-width="1.5" fill="none"><path class="stream" d="M54 0 V41"></path><path class="stream" d="M68 0 V41"></path><path class="stream" d="M82 0 V41"></path></g><text class="rain r1" x="47" y="0" text-anchor="middle" font-size="9.5"><tspan x="47" dy="13">0</tspan><tspan x="47" dy="13">1</tspan><tspan x="47" dy="13">1</tspan><tspan x="47" dy="13">0</tspan><tspan x="47" dy="13">1</tspan><tspan x="47" dy="13">0</tspan><tspan x="47" dy="13">0</tspan><tspan x="47" dy="13">1</tspan><tspan x="47" dy="13">1</tspan><tspan x="47" dy="13">0</tspan><tspan x="47" dy="13">1</tspan></text><text class="rain r2" x="68" y="0" text-anchor="middle" font-size="9.5"><tspan x="68" dy="13">x̄</tspan><tspan x="68" dy="13">β</tspan><tspan x="68" dy="13">σ</tspan><tspan x="68" dy="13">p</tspan><tspan x="68" dy="13">θ</tspan><tspan x="68" dy="13">n</tspan><tspan x="68" dy="13">ε</tspan><tspan x="68" dy="13">μ</tspan><tspan x="68" dy="13">λ</tspan><tspan x="68" dy="13">ρ</tspan><tspan x="68" dy="13">t</tspan></text><text class="rain r3" x="92" y="0" text-anchor="middle" font-size="9.5"><tspan x="92" dy="13">NA</tspan><tspan x="92" dy="13">3.1</tspan><tspan x="92" dy="13">42</tspan><tspan x="92" dy="13">.05</tspan><tspan x="92" dy="13">Inf</tspan><tspan x="92" dy="13">-1</tspan><tspan x="92" dy="13">NaN</tspan><tspan x="92" dy="13">0.9</tspan><tspan x="92" dy="13">7</tspan><tspan x="92" dy="13">1e3</tspan></text></g><g class="walker"><!-- legs --><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path class="leg1" d="M60 156 V202 H70"></path><path class="leg2" d="M74 156 V202 H84"></path></g><g class="body" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><!-- hair: a histogram --><g class="accent" fill="currentColor" stroke="none"><rect x="44" y="41" width="6" height="5"></rect><rect x="51" y="37" width="6" height="9"></rect><rect x="58" y="33" width="6" height="13"></rect><rect x="65" y="31" width="6" height="15"></rect><rect x="72" y="34" width="6" height="12"></rect><rect x="79" y="38" width="6" height="8"></rect><rect x="86" y="42" width="6" height="4"></rect></g><!-- head, filling up with data --><rect class="brain accent" x="42" y="46" width="52" height="50" rx="5" fill="currentColor" stroke="none"></rect><rect x="42" y="46" width="52" height="50" rx="5"></rect><!-- forehead suture --><path d="M48 56 H88 M54 52 V60 M64 52 V60 M74 52 V60 M84 52 V60" stroke-width="1.8"></path><!-- x-bar eye, lights up once the data is in --><path d="M74 66 H88"></path><circle class="eye accent" cx="81" cy="74" r="4.5" fill="transparent" stroke="currentColor"></circle><!-- mouth: jagged --><path d="M70 87 L74 84 L78 88 L82 84 L86 88 L90 85" stroke-width="2"></path><!-- bolts on both sides of the head --><g stroke-width="2"><rect x="36" y="76" width="6" height="4" rx="1"></rect><rect x="94" y="76" width="6" height="4" rx="1"></rect><rect x="32" y="73" width="4" height="10" rx="1.5" fill="currentColor"></rect><rect x="100" y="73" width="4" height="10" rx="1.5" fill="currentColor"></rect></g><g class="zap accent" stroke="currentColor" stroke-width="2"><path d="M30 73 L25 68 M29 78 L22 78 M30 83 L25 88 M106 73 L111 68 M107 78 L114 78 M106 83 L111 88"></path></g><!-- neck --><path d="M58 96 V104 M74 96 V104"></path><!-- torso --><rect x="52" y="104" width="30" height="52" rx="4"></rect><path d="M58 116 L62 114 M58 128 L62 126 M58 140 L62 138" stroke-width="1.5"></path><!-- zombie arms --><path d="M78 112 H124 M76 120 H120"></path><path d="M124 112 l5 -3 M124 112 l6 0 M124 112 l5 3 M120 120 l5 -2 M120 120 l5 2" stroke-width="1.8"></path></g></g></svg><figcaption>Fig. 0: An estimator, stitched together without understanding the assumptions.</figcaption></figure><div class="tagline">
+<p>Become knowledgeable users of statistical methods.<br> Otherwise, they become your monster.</p>
+</div>
+<p>In this seminar, you take one statistical method into the lab: you dissect it, bring it to life in code, and then deliberately try to make it fail using Monte Carlo simulations. You leave the lab as its master, not its victim.</p>
+<hr>
+<section id="lab-protocol" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="lab-protocol">Lab Protocol</h2>
+<div class="spaced-list">
+<ol type="1">
+<li>
+<strong>Equip the lab.</strong> We start together: in the first meetings, we learn how to build Monte Carlo simulations and use them to make statistical methods fail (<a href="01-Monte-Carlo.html" class="quarto-xref"><span>1&nbsp; Monte Carlo Simulations: The Laboratory</span></a>).</li>
+<li>
+<strong>Assign the specimens.</strong> Together, we allocate the topics, one statistical method per lab group (<a href="02-Topics.html" class="quarto-xref"><span>2&nbsp; Topics: The Specimens</span></a>).</li>
+<li>
+<strong>Dissect it.</strong> Work out its assumptions, its mechanics, and how it turns on its users, and write it all down in your seminar thesis (<a href="03-Seminar-Thesis.html" class="quarto-xref"><span>3&nbsp; Writing the Seminar Thesis</span></a>).</li>
+<li>
+<strong>Present it.</strong> Show your creature to the seminar, including the moment it turns on you.</li>
+</ol>
+</div>
 <section id="timetable" class="level3 unnumbered"><h3 class="unnumbered anchored" data-anchor-id="timetable">Timetable</h3>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -162,38 +333,52 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Kick-off Meeting</td>
-<td style="text-align: left;">Mo. November 9</td>
-<td style="text-align: left;">9:15-12:45</td>
+<td style="text-align: left;">Mon., November 9</td>
+<td style="text-align: left;">9:15–12:45</td>
 <td style="text-align: left;">HB-108</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Regular Meetings</td>
-<td style="text-align: left;">Monday</td>
-<td style="text-align: left;">9:15-12:45</td>
+<td style="text-align: left;">Mondays</td>
+<td style="text-align: left;">9:15–12:45</td>
 <td style="text-align: left;">HB-108</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Presentations</td>
 <td style="text-align: left;">Dates: TBA</td>
-<td style="text-align: left;">9:15-12:45</td>
+<td style="text-align: left;">9:15–12:45</td>
 <td style="text-align: left;">HB-108</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<section id="zoom-room" class="level4 unnumbered"><h4 class="unnumbered anchored" data-anchor-id="zoom-room">Zoom Room</h4>
+</section><section id="lab-rules" class="level3 unnumbered"><h3 class="unnumbered anchored" data-anchor-id="lab-rules">Lab Rules</h3>
 <ul>
-<li>TBA</li>
-</ul></section><section id="seminar-material" class="level4 unnumbered"><h4 class="unnumbered anchored" data-anchor-id="seminar-material">Seminar Material</h4>
+<li>You work in <strong>lab groups of three</strong>.</li>
+<li>
+<strong>Grading:</strong>
 <ul>
-<li>This online script</li>
-<li>TBA</li>
-</ul></section><section id="literature" class="level4 unnumbered"><h4 class="unnumbered anchored" data-anchor-id="literature">Literature</h4>
-<ul>
-<li>TBA</li>
+<li>80% seminar thesis, your written lab report</li>
+<li>20% presentation, where <em>every</em> group member speaks. Victor abandoned his creature; you stand by yours.</li>
 </ul>
+</li>
+</ul>
+<!-- 
+#### Zoom Room {-}
 
+* TBA
+
+
+#### Seminar Material {-}
+
+* This online script
+* TBA
+
+#### Literature {-}
+
+* TBA
+-->
 
 </section></section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -758,7 +943,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./01-Monte-Carlo.html" class="pagination-link" aria-label="Monte Carlo Simulations: The Laboratory">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Monte Carlo Simulations: The Laboratory</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

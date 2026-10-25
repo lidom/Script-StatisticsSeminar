@@ -1,0 +1,21 @@
+<!-- LTeX: language=en-US -->
+# Monte Carlo Simulations: The Laboratory {#sec-mc}
+
+```
+> fit <- lm(y ~ ., data = everything)
+Warning message:
+  The creature is alive. Did you check the assumptions?
+```
+
+Real data never tell us the truth. We do not know the true parameter, and we do not know whether the assumptions of our method hold. In a Monte Carlo simulation, *we* are the creators: we choose the data generating process, so we know the truth, and we can watch how a method behaves when its assumptions hold and when they break.
+
+This makes Monte Carlo simulations the laboratory of this seminar. Before you take your own method into the lab, we build this laboratory together in the first meetings of the seminar. Afterwards, you will use it in your seminar thesis to investigate when your method works and when it fails (see @sec-thesis).
+
+## Material
+
+In our first meetings, we work with the Monte Carlo chapters of my coding intros. They cover random samples, data generating processes, and how to check consistency, asymptotic normality, and the size of tests by simulation:
+
+* [Monte Carlo Simulations with R](https://lidom.github.io/Script-Coding-Intros/R-06-Monte-Carlo-Simulations.html)
+* [Monte Carlo Simulations with Python](https://lidom.github.io/Script-Coding-Intros/Python-06-Monte-Carlo-Simulations.html)
+
+Choose the language you want to use for your seminar thesis. Bring your laptop to the meetings; we code together.

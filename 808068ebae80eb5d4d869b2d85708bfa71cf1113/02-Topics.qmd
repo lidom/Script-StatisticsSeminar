@@ -1,0 +1,134 @@
+<!-- LTeX: language=en-US -->
+# Topics: The Specimens {#sec-topics}
+
+Each topic is one statistical method, one specimen for a lab group. We allocate the topics together in the seminar, so take a look at all of them and think about which ones interest you most. For each topic, you find a short description, its key assumptions, and first ideas on how it turns on its users. These ideas are starting points for your Monte Carlo failure investigations; you are expected to find more (see @sec-thesis).
+
+---
+
+## Instrumental Variables {#sec-topic-iv}
+
+In the linear model $Y_i = \beta_0 + \beta_1 X_i + u_i$, the OLS estimator is inconsistent if the regressor $X_i$ is endogenous, i.e., $\operatorname{Cov}(X_i, u_i) \neq 0$, for instance due to omitted variables, measurement error, or simultaneity. Instrumental variables (IV) estimators, such as two-stage least squares (2SLS), use an instrument $Z_i$ to isolate the exogenous variation in $X_i$.
+
+::: {.skeleton}
+* **Relevance:** $\operatorname{Cov}(Z_i, X_i) \neq 0$
+* **Exogeneity:** $\operatorname{Cov}(Z_i, u_i) = 0$
+* Random sampling and finite moments
+:::
+
+::: {.monster}
+* **Weak instruments:** If $Z_i$ is only weakly correlated with $X_i$, 2SLS is biased towards OLS, its distribution is far from normal, and $t$-tests reject far too often.
+* **Invalid instruments:** A small correlation between $Z_i$ and $u_i$ can cause a large inconsistency, especially when the instrument is weak.
+* **Many instruments:** Adding more and more instruments can make 2SLS behave like OLS.
+:::
+
+**Literature:** @AngristPischke2009 [Ch. 4], @StaigerStock1997, @StockWrightYogo2002
+
+---
+
+## Heteroskedasticity-Robust Standard Errors {#sec-topic-hc}
+
+In the linear regression model $Y_i = X_i'\beta + u_i$, the classical OLS standard errors assume homoskedastic errors, $\operatorname{Var}(u_i \mid X_i) = \sigma^2$. If the error variance depends on $X_i$, these standard errors are wrong, and so are the resulting $t$-tests and confidence intervals. Heteroskedasticity-robust ("sandwich") standard errors, such as HC0 to HC3, remain valid under heteroskedasticity of unknown form.
+
+::: {.skeleton}
+* Random sampling of $(Y_i, X_i)$
+* Exogeneity: $E(u_i \mid X_i) = 0$
+* Finite fourth moments; no perfect multicollinearity
+* Validity is *asymptotic*, i.e., for large $n$
+:::
+
+::: {.monster}
+* **Classical standard errors under heteroskedasticity:** How far off are the size of $t$-tests and the coverage of confidence intervals?
+* **Small samples:** HC0 tends to underestimate the variance, so robust $t$-tests reject too often. Do HC2 and HC3 fix this?
+* **Leverage points:** A few observations with extreme $X_i$ values can make robust standard errors very unreliable.
+:::
+
+**Literature:** @White1980, @MacKinnonWhite1985, @LongErvin2000
+
+---
+
+## Nonparametric Density Estimation {#sec-topic-kde}
+
+How do we estimate the density $f$ of a random variable $X$ without assuming a parametric family such as the normal distribution? The kernel density estimator
+$$
+\hat{f}_h(x) = \frac{1}{nh} \sum_{i=1}^n K\left(\frac{x - X_i}{h}\right)
+$$
+places a small "bump" $K$ (the kernel) at each observation and averages them. The bandwidth $h$ controls how smooth the estimate is.
+
+::: {.skeleton}
+* $X_1, \dots, X_n$ are i.i.d. with density $f$
+* $f$ is smooth (e.g., twice continuously differentiable)
+* $h \to 0$ and $nh \to \infty$ as $n \to \infty$
+:::
+
+::: {.monster}
+* **Bandwidth choice:** Too small, and you see spurious bumps; too large, and real modes vanish. Rules of thumb, such as Silverman's, can oversmooth multimodal densities.
+* **Boundaries:** For densities with bounded support (e.g., an exponential distribution), the estimator is biased near the boundary.
+* **Dimensions:** In more than a few dimensions, the required sample size explodes (curse of dimensionality).
+* **Dependent data:** What happens to bandwidth selection if the observations are not independent?
+:::
+
+**Literature:** @Silverman1986, @WandJones1995
+
+---
+
+## Nonparametric Regression {#sec-topic-kreg}
+
+How do we estimate the regression function $m(x) = E(Y \mid X = x)$ without assuming that it is linear, or of any other parametric form? Kernel regression estimators fit a local average (Nadaraya–Watson) or a local straight line (local linear) around each point $x$, weighting observations by a kernel $K$ with bandwidth $h$. The Nadaraya–Watson estimator is
+$$
+\hat{m}_h(x) = \frac{\sum_{i=1}^n K\left(\frac{x - X_i}{h}\right) Y_i}{\sum_{i=1}^n K\left(\frac{x - X_i}{h}\right)}.
+$$
+
+::: {.skeleton}
+* $(Y_1, X_1), \dots, (Y_n, X_n)$ are i.i.d.
+* $m$ is smooth (e.g., twice continuously differentiable), and the density of $X$ is bounded away from zero
+* $h \to 0$ and $nh \to \infty$ as $n \to \infty$
+:::
+
+::: {.monster}
+* **Bandwidth choice:** How sensitive are the results to $h$? How well does cross-validation work?
+* **Boundaries:** Nadaraya–Watson is biased near the boundary of the support of $X$. Does local linear regression fix this?
+* **Sparse designs:** What happens in regions with only few $X_i$ values?
+* **Dimensions:** With several regressors, the curse of dimensionality strikes again.
+:::
+
+**Literature:** @FanGijbels1996, @LiRacine2007 [Ch. 2]
+
+---
+
+## Multiple Testing {#sec-topic-mt}
+
+If you carry out $m$ tests, each at level $\alpha = 0.05$, then you should expect about $0.05 \cdot m$ false rejections even if all null hypotheses are true. Multiple testing procedures control either the family-wise error rate (FWER), i.e., the probability of at least one false rejection (Bonferroni, Holm), or the false discovery rate (FDR), i.e., the expected proportion of false rejections among all rejections (Benjamini–Hochberg).
+
+::: {.skeleton}
+* Valid $p$-values for each individual test
+* Bonferroni and Holm: no assumptions on the dependence between the tests
+* Benjamini–Hochberg: independent (or positively dependent) test statistics
+:::
+
+::: {.monster}
+* **No correction:** How quickly do false discoveries pile up as $m$ grows?
+* **Power:** How much power do Bonferroni and Holm lose compared to Benjamini–Hochberg, and how does this depend on the number of false null hypotheses?
+* **Dependence:** Does Benjamini–Hochberg still control the FDR if the test statistics are negatively correlated?
+:::
+
+**Literature:** @Holm1979, @BenjaminiHochberg1995, @BenjaminiYekutieli2001
+
+---
+
+## Rank-Based Tests {#sec-topic-rank}
+
+The $t$-test assumes normally distributed data, or a sample large enough for the central limit theorem to work. Rank-based tests, such as the Wilcoxon signed-rank test and the Wilcoxon–Mann–Whitney rank-sum test, replace the observations by their ranks. This makes them robust to outliers and heavy tails, and they lose surprisingly little power when the data are in fact normal.
+
+::: {.skeleton}
+* Independent observations (within and between samples)
+* Continuous distributions (no ties)
+* Rank-sum test: under the null hypothesis, both samples come from the *same* distribution
+:::
+
+::: {.monster}
+* **What does it test?** The rank-sum test is often sold as a test for equal medians. Is it? Simulate two distributions with equal medians but different variances or shapes, and check the size.
+* **Heavy tails:** How do the $t$-test and the rank-sum test compare under normal, $t$-distributed, and contaminated data?
+* **Ties:** What happens with discrete data, e.g., Likert scales?
+:::
+
+**Literature:** @HollanderWolfeChicken2014, @FagerlandSandvik2009

@@ -1,0 +1,71 @@
+<!-- The stats monster: inline SVG so it follows the light/dark theme -->
+```{=html}
+<figure class="stats-monster">
+<svg viewBox="0 0 280 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A spooky Frankenstein monster stitched together from statistical plots under a full moon: histogram hair struck by lightning, mismatched x-bar eyes, an overfitted grin with jagged teeth, bolts in the neck, and a jagged speech bubble shouting p < 0.05">
+  <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- full moon and bats -->
+    <circle class="accent" cx="34" cy="38" r="26" fill="currentColor" stroke="none" opacity="0.15"/>
+    <path d="M14 30 q4 -4 8 0 q2 -3 4 0 q4 -4 8 0 q-4 1 -6 4 q-2 -2 -4 0 q-2 -3 -6 -4 Z" fill="currentColor" stroke-width="1"/>
+    <path d="M36 52 q3 -3 6 0 q1.5 -2 3 0 q3 -3 6 0 q-3 1 -4.5 3 q-1.5 -1.5 -3 0 q-1.5 -2 -4.5 -3 Z" fill="currentColor" stroke-width="1"/>
+    <!-- lightning strikes the hair -->
+    <path class="accent" d="M112 0 L100 16 H110 L96 34" stroke-width="2.5"/>
+    <!-- hair: a histogram -->
+    <g class="accent" fill="currentColor" stroke="none">
+      <rect x="50" y="56" width="8.5" height="8"/>
+      <rect x="60" y="48" width="8.5" height="16"/>
+      <rect x="70" y="38" width="8.5" height="26"/>
+      <rect x="80" y="30" width="8.5" height="34"/>
+      <rect x="90" y="36" width="8.5" height="28"/>
+      <rect x="100" y="32" width="8.5" height="32"/>
+      <rect x="110" y="34" width="8.5" height="30"/>
+      <rect x="120" y="42" width="8.5" height="22"/>
+      <rect x="130" y="50" width="8.5" height="14"/>
+      <rect x="140" y="58" width="8.5" height="6"/>
+    </g>
+    <!-- head -->
+    <rect x="48" y="64" width="104" height="104" rx="8"/>
+    <!-- sutures: forehead and temple -->
+    <path d="M62 80 H128"/>
+    <path d="M68 75 V85 M80 75 V85 M92 75 V85 M104 75 V85 M116 75 V85" stroke-width="2"/>
+    <path d="M128 80 L140 102"/>
+    <path d="M128 90 L137 86 M132 98 L141 94" stroke-width="2"/>
+    <!-- eyes: mismatched x-bar eyes with a menacing tilt -->
+    <path d="M64 96 L90 102 M110 103 L132 97"/>
+    <circle cx="78" cy="114" r="9"/>
+    <circle cx="121" cy="115" r="6"/>
+    <circle cx="79" cy="115" r="2.2" fill="currentColor"/>
+    <circle cx="121" cy="116" r="1.6" fill="currentColor"/>
+    <!-- sleepless eye bags -->
+    <path d="M70 127 Q78 131 86 127 M115 125 Q121 128 127 125" stroke-width="1.5" opacity="0.6"/>
+    <!-- nose -->
+    <path d="M100 118 L96 130 H102" stroke-width="2"/>
+    <!-- mouth: jagged grin with an overfitted line through every data point -->
+    <path d="M70 142 H130 L126 152 L120 145 L114 154 L108 145 L102 155 L96 145 L90 154 L84 145 L78 153 L74 145 Z" stroke-width="2"/>
+    <g fill="currentColor" stroke="none">
+      <circle cx="76" cy="139" r="2"/>
+      <circle cx="86" cy="134" r="2"/>
+      <circle cx="96" cy="140" r="2"/>
+      <circle cx="106" cy="133" r="2"/>
+      <circle cx="116" cy="139" r="2"/>
+      <circle cx="125" cy="134" r="2"/>
+    </g>
+    <path class="accent" d="M72 136 C78 141 80 134 86 134 S92 141 96 140 S102 132 106 133 S112 140 116 139 S121 133 125 134 L129 137" stroke-width="2"/>
+    <!-- neck and sparking bolts -->
+    <path d="M84 168 V192 M116 168 V192"/>
+    <rect x="68" y="175" width="16" height="9" rx="2"/>
+    <rect x="116" y="175" width="16" height="9" rx="2"/>
+    <path d="M62 179.5 H68 M132 179.5 H138"/>
+    <path class="accent" d="M58 172 L54 168 M56 180 L50 180 M58 187 L54 191 M142 172 L146 168 M144 180 L150 180 M142 187 L146 191" stroke-width="2"/>
+    <!-- shoulders with a stitched collar -->
+    <path d="M84 192 L46 206 Q34 211 32 230 M116 192 L154 206 Q166 211 168 230"/>
+    <path d="M84 192 L100 214 L116 192"/>
+    <path d="M90 196 L95 194 M94 203 L99 201 M110 196 L105 194 M106 203 L101 201" stroke-width="1.5"/>
+    <!-- jagged speech bubble -->
+    <path d="M166 44 L178 36 L192 44 L208 34 L222 42 L238 32 L250 42 L268 40 L262 56 L272 68 L258 76 L262 90 L244 84 L230 92 L216 84 L200 92 L190 84 L168 98 L176 80 L160 76 L168 62 L158 52 Z" stroke-width="2"/>
+    <text x="215" y="68" text-anchor="middle" fill="currentColor" stroke="none"
+          font-family="Fira Mono, monospace" font-size="16" font-weight="bold">p &lt; 0.05!</text>
+  </g>
+</svg>
+<figcaption>Fig. 0: An estimator, stitched together without understanding the assumptions.</figcaption>
+</figure>
+```

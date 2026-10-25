@@ -1,0 +1,126 @@
+---
+title: "Title of Your Seminar Thesis"
+subtitle: "Seminar Thesis · Statistics Seminar · KU Eichstätt-Ingolstadt"
+author:
+  - Name One (Matriculation No.)
+  - Name Two (Matriculation No.)
+  - Name Three (Matriculation No.)
+date: today
+abstract: |
+  Summarize your thesis in a few sentences: Which method do you study,
+  what are its key assumptions, and what did your simulation study reveal
+  about when the method works and when it fails?
+format:
+  pdf:
+    documentclass: scrartcl
+    papersize: a4
+    fontsize: 12pt
+    linestretch: 1.5
+    geometry: margin=2.5cm
+    toc: true
+    number-sections: true
+    colorlinks: true
+    fig-width: 6
+    fig-height: 3.5
+    include-in-header:
+      text: |
+        % Compact code snippets: single-spaced, small font
+        \usepackage{etoolbox}
+        \AtBeginEnvironment{Shaded}{\singlespacing\small}
+execute:
+  echo: false     # code is hidden by default; show short snippets with #| echo: true
+  warning: false
+  message: false
+bibliography: references.bib
+---
+
+```{r}
+#| label: setup
+source("R/functions.R")
+
+# Run the simulation study only if its results are not yet saved.
+# Delete results/simulation.rds to rerun it.
+if (!file.exists("results/simulation.rds")) source("R/simulation.R")
+sim <- readRDS("results/simulation.rds")
+```
+
+\newpage
+
+<!--
+  Page limit: 15–20 pages for the main text (Sections 1 to 6), including
+  figures and tables. Title page, table of contents, references, and
+  appendix do not count.
+-->
+
+# Introduction
+
+Motivate the method: Which problem does it solve, and where is it used? State the goal of your thesis and give an overview of its structure.
+
+# Assumptions
+
+State the statistical model and all assumptions under which the method is justified. Explain what each assumption means and where it is needed.
+
+# How the Method Works
+
+Define the method formally, give the intuition behind it, and state its main theoretical properties. Cite your sources, e.g., @Silverman1986.
+
+Show code only when it helps the reader to understand the method, and keep such snippets short:
+
+```{r}
+#| echo: true
+#| eval: false
+ci_mean <- function(x, level = 0.95) {
+  q <- qt(1 - (1 - level) / 2, df = length(x) - 1)
+  mean(x) + c(-1, 1) * q * sd(x) / sqrt(length(x))
+}
+```
+
+# Application
+
+Apply the method to a (real or simulated) data example and interpret the results.
+
+# Simulation Study
+
+Describe the design of your simulation study: the data generating processes, which assumption each of them violates, the sample sizes, the number of replications, and the performance measures.
+
+The following example studies the coverage probability of the classical 95% confidence interval for the mean, which assumes normally distributed data. @tbl-coverage and @fig-coverage show the results based on `r sim$B` Monte Carlo replications.
+
+```{r}
+#| label: tbl-coverage
+#| tbl-cap: "Empirical coverage probabilities of the 95% confidence interval for the mean."
+tab <- reshape(sim$results, idvar = "dgp", timevar = "n", direction = "wide")
+names(tab) <- c("Distribution", paste0("n = ", unique(sim$results$n)))
+knitr::kable(tab, digits = 3, row.names = FALSE)
+```
+
+```{r}
+#| label: fig-coverage
+#| fig-cap: "Empirical coverage probabilities. The dashed line marks the nominal level of 95%."
+res <- sim$results
+plot(NULL, xlim = range(res$n), ylim = c(min(res$coverage, 0.85), 1),
+     log = "x", xlab = "Sample size n", ylab = "Coverage probability")
+abline(h = 0.95, lty = 2)
+for (i in seq_along(unique(res$dgp))) {
+  d <- res[res$dgp == unique(res$dgp)[i], ]
+  lines(d$n, d$coverage, type = "b", pch = i, lty = 1)
+}
+legend("bottomright", legend = unique(res$dgp), pch = seq_along(unique(res$dgp)),
+       bty = "n")
+```
+
+Interpret the results: When can a user rely on the method? What should a user watch out for in practice?
+
+# Conclusion
+
+Summarize your findings and give practical recommendations.
+
+# References {.unnumbered}
+
+::: {#refs}
+:::
+
+\appendix
+
+# Appendix
+
+Additional figures, tables, or proofs can go here. The full code is not printed here, but submitted as separate files (see the README).
