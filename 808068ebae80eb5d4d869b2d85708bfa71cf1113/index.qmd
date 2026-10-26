@@ -1,6 +1,20 @@
 <!-- LTeX: language=en-US -->
 # Welcome to the Lab {-}
 
+### Timetable {-}
+
+```{r, echo=FALSE}
+suppressPackageStartupMessages(library("kableExtra"))
+suppressPackageStartupMessages(library("tidyverse"))
+
+timetable <- tibble("Event"   = c("Kick-off Meeting",   "Regular Meetings", "Presentations"),
+                    "Day"     = c("Mon., November 9",   "Mondays",          "Dates: TBA"),
+                    "Time"    = c("9:15–12:45",         "9:15–12:45",       "9:15–12:45"),
+                    "Room"    = c("HB-108",             "HB-108",           "HB-108"))
+
+timetable %>% kbl() %>% kable_styling()
+```
+
 ::: {.epigraph}
 "Learn from me, if not by my precepts, at least by my example, how dangerous is the acquirement of knowledge."
 
@@ -31,20 +45,6 @@ In this seminar, you take one statistical method into the lab: you dissect it, b
 3. **Dissect it.** Work out its assumptions, its mechanics, and how it turns on its users, and write it all down in your seminar thesis (@sec-thesis).
 4. **Present it.** Show your creature to the seminar, including the moment it turns on you.
 :::
-
-### Timetable {-}
-
-```{r, echo=FALSE}
-suppressPackageStartupMessages(library("kableExtra"))
-suppressPackageStartupMessages(library("tidyverse"))
-
-timetable <- tibble("Event"   = c("Kick-off Meeting",   "Regular Meetings", "Presentations"),
-                    "Day"     = c("Mon., November 9",   "Mondays",          "Dates: TBA"),
-                    "Time"    = c("9:15–12:45",         "9:15–12:45",       "9:15–12:45"),
-                    "Room"    = c("HB-108",             "HB-108",           "HB-108"))
-
-timetable %>% kbl() %>% kable_styling()
-```
 
 ### Lab Rules {-}
 

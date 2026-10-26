@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Statistics Seminar",
     "section": "",
-    "text": "Welcome to the Lab\nVictor Frankenstein did not fail because his creation was weak. He failed because he brought it to life without fully understanding it, and then walked away from it.\nStatistical methods are no different. Software makes it easy to stitch together an estimator, a test, and a p-value, and to throw the switch. But a method applied without understanding its assumptions, its mechanics, and its failure modes will sooner or later turn against its user.\nIn this seminar, you take one statistical method into the lab: you dissect it, bring it to life in code, and then deliberately try to make it fail using Monte Carlo simulations. You leave the lab as its master, not its victim.",
+    "text": "Welcome to the Lab",
     "crumbs": [
       "Welcome to the Lab"
     ]
@@ -14,7 +14,7 @@
     "href": "index.html#lab-protocol",
     "title": "Statistics Seminar",
     "section": "Lab Protocol",
-    "text": "Lab Protocol\n\n\n\nEquip the lab. We start together: in the first meetings, we learn how to build Monte Carlo simulations and use them to make statistical methods fail (1  Monte Carlo Simulations: The Laboratory).\n\nAssign the specimens. Together, we allocate the topics, one statistical method per lab group (2  Topics: The Specimens).\n\nDissect it. Work out its assumptions, its mechanics, and how it turns on its users, and write it all down in your seminar thesis (3  Writing the Seminar Thesis).\n\nPresent it. Show your creature to the seminar, including the moment it turns on you.\n\n\nTimetable\n\n\n\n\nEvent\nDay\nTime\nRoom\n\n\n\nKick-off Meeting\nMon., November 9\n9:15–12:45\nHB-108\n\n\nRegular Meetings\nMondays\n9:15–12:45\nHB-108\n\n\nPresentations\nDates: TBA\n9:15–12:45\nHB-108\n\n\n\n\n\nLab Rules\n\nYou work in lab groups of three.\n\nGrading:\n\n80% seminar thesis, your written lab report\n20% presentation, where every group member speaks. Victor abandoned his creature; you stand by yours.",
+    "text": "Lab Protocol\n\n\n\nEquip the lab. We start together: in the first meetings, we learn how to build Monte Carlo simulations and use them to make statistical methods fail (1  Monte Carlo Simulations: The Laboratory).\n\nAssign the specimens. Together, we allocate the topics, one statistical method per lab group (2  Topics: The Specimens).\n\nDissect it. Work out its assumptions, its mechanics, and how it turns on its users, and write it all down in your seminar thesis (3  Writing the Seminar Thesis).\n\nPresent it. Show your creature to the seminar, including the moment it turns on you.\n\n\nLab Rules\n\nYou work in lab groups of three.\n\nGrading:\n\n80% seminar thesis, your written lab report\n20% presentation, where every group member speaks. Victor abandoned his creature; you stand by yours.",
     "crumbs": [
       "Welcome to the Lab"
     ]
