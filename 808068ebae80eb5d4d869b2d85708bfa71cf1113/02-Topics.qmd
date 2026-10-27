@@ -3,6 +3,8 @@
 
 Each topic is one statistical method, one specimen for a lab group. We allocate the topics together in the seminar, so take a look at all of them and think about which ones interest you most. For each topic, you find a short description, its key assumptions, and first ideas on how it turns on its users. These ideas are starting points for your Monte Carlo failure investigations; you are expected to find more (see @sec-thesis).
 
+**Bring your own specimen.** You may also suggest a statistical method of your own as a topic. Own topics must be approved by the supervisor, so please contact me with a short description of the method before the topics are allocated.
+
 ---
 
 ## Instrumental Variables {#sec-topic-iv}
@@ -12,7 +14,9 @@ In the linear model $Y_i = \beta_0 + \beta_1 X_i + u_i$, the OLS estimator is in
 ::: {.skeleton}
 * **Relevance:** $\operatorname{Cov}(Z_i, X_i) \neq 0$
 * **Exogeneity:** $\operatorname{Cov}(Z_i, u_i) = 0$
-* Random sampling and finite moments
+<!-- 
+* Random sampling and finite moments 
+-->
 :::
 
 ::: {.monster}

@@ -7,7 +7,7 @@
 suppressPackageStartupMessages(library("kableExtra"))
 suppressPackageStartupMessages(library("tidyverse"))
 
-timetable <- tibble("Event"   = c("Kick-off Meeting",   "Regular Meetings", "Presentations"),
+timetable <- tibble("Event"   = c("Kick-off Meeting",   "Regular Lab Meetings", "Presentations"),
                     "Day"     = c("Mon., November 9",   "Mondays",          "Dates: TBA"),
                     "Time"    = c("9:15–12:45",         "9:15–12:45",       "9:15–12:45"),
                     "Room"    = c("HB-108",             "HB-108",           "HB-108"))
