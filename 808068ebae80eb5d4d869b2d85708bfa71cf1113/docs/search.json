@@ -54,7 +54,7 @@
     "href": "02-Topics.html#sec-topic-iv",
     "title": "2  Topics: The Specimens",
     "section": "",
-    "text": "Relevance: \\(\\operatorname{Cov}(Z_i, X_i) \\neq 0\\)\nExogeneity: \\(\\operatorname{Cov}(Z_i, u_i) = 0\\)\nRandom sampling and finite moments\n\n\n\n\nWeak instruments: If \\(Z_i\\) is only weakly correlated with \\(X_i\\), 2SLS is biased towards OLS, its distribution is far from normal, and \\(t\\)-tests reject far too often.\nInvalid instruments: A small correlation between \\(Z_i\\) and \\(u_i\\) can cause a large inconsistency, especially when the instrument is weak.\nMany instruments: Adding more and more instruments can make 2SLS behave like OLS.",
+    "text": "Relevance: \\(\\operatorname{Cov}(Z_i, X_i) \\neq 0\\)\nExogeneity: \\(\\operatorname{Cov}(Z_i, u_i) = 0\\) \n\n\n\n\nWeak instruments: If \\(Z_i\\) is only weakly correlated with \\(X_i\\), 2SLS is biased towards OLS, its distribution is far from normal, and \\(t\\)-tests reject far too often.\nInvalid instruments: A small correlation between \\(Z_i\\) and \\(u_i\\) can cause a large inconsistency, especially when the instrument is weak.\nMany instruments: Adding more and more instruments can make 2SLS behave like OLS.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topics: The Specimens</span>"
     ]

@@ -15,6 +15,12 @@ timetable <- tibble("Event"   = c("Kick-off Meeting",   "Regular Lab Meetings", 
 timetable %>% kbl() %>% kable_styling()
 ```
 
+### Who Is the Seminar For? {-}
+
+The seminar is open to Master's students at the WFI (e.g., in the BAOR program) and to students in the Master's program in Data Science.
+
+You should have completed at least one Master's-level statistics course (e.g., Predictive Analytics) or hold a Bachelor's degree with a quantitative focus. Most importantly, you should be curious about *how* and *why* statistical methods work, not just how to apply them.
+
 ::: {.epigraph}
 "Learn from me, if not by my precepts, at least by my example, how dangerous is the acquirement of knowledge."
 
