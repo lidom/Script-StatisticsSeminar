@@ -13,7 +13,18 @@ This makes Monte Carlo simulations the laboratory of this seminar. Before you ta
 
 ## Material
 
-In our first meetings, we work with the Monte Carlo chapters of my coding intros. They cover random samples, data generating processes, and how to check consistency, asymptotic normality, and the size of tests by simulation:
+In our first meetings, we work with the Monte Carlo chapter of my coding intros. They cover random samples, data generating processes, and how to check 
+
+:::{.spaced-list}
+* Unbiasedness 
+* Consistency 
+* Asymptotic normality, and 
+* Size of tests 
+:::
+
+by Monte Carlo simulation:
+
+**Caution: Parts of the material are still under construction.**
 
 * [Monte Carlo Simulations with R](https://lidom.github.io/Script-Coding-Intros/R-06-Monte-Carlo-Simulations.html)
 * [Monte Carlo Simulations with Python](https://lidom.github.io/Script-Coding-Intros/Python-06-Monte-Carlo-Simulations.html)

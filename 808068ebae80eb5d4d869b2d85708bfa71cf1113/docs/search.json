@@ -24,7 +24,7 @@
     "href": "01-Monte-Carlo.html",
     "title": "1  Monte Carlo Simulations: The Laboratory",
     "section": "",
-    "text": "1.1 Material\nIn our first meetings, we work with the Monte Carlo chapters of my coding intros. They cover random samples, data generating processes, and how to check consistency, asymptotic normality, and the size of tests by simulation:\nChoose the language you want to use for your seminar thesis. Bring your laptop to the meetings; we code together.",
+    "text": "1.1 Material\nIn our first meetings, we work with the Monte Carlo chapter of my coding intros. They cover random samples, data generating processes, and how to check\nby Monte Carlo simulation:\nCaution: Parts of the material are still under construction.\nChoose the language you want to use for your seminar thesis. Bring your laptop to the meetings; we code together.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Monte Carlo Simulations: The Laboratory</span>"
     ]
@@ -34,7 +34,7 @@
     "href": "01-Monte-Carlo.html#material",
     "title": "1  Monte Carlo Simulations: The Laboratory",
     "section": "",
-    "text": "Monte Carlo Simulations with R\nMonte Carlo Simulations with Python",
+    "text": "Unbiasedness\nConsistency\nAsymptotic normality, and\nSize of tests\n\n\n\n\n\nMonte Carlo Simulations with R\nMonte Carlo Simulations with Python",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Monte Carlo Simulations: The Laboratory</span>"
     ]
