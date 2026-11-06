@@ -54,17 +54,20 @@ In this seminar, you take one statistical method into the lab: you dissect it, b
 
 ### Lab Rules {-}
 
-* **Lab groups:** three students each.
+* **Lab groups:** two to three students each.
 * **Grading:**
     * 80% seminar thesis (your written lab report)
     * 20% presentation, in which *every* group member speaks. Victor abandoned his creature; you stand by yours.
 * **Exam registration (via [campus.KU](https://campus.ku.de/)) deadline:** January 21.
 
-### Lab Group Registration {-}
+### Forming the Lab Groups {-}
 
-Please enter your name and email address in the registration sheet so we can form the lab groups.
+To help us form the lab groups, please enter your name and email address in the lab group sheet. 
 
-[Open the registration sheet](https://cryptpad.fr/sheet/#/2/sheet/edit/RPAM7gX3L9o3yaLPraEggL+O/){.btn .btn-primary target="_blank" rel="noopener"}
+[Open the lab group sheet](https://cryptpad.fr/sheet/#/2/sheet/edit/RPAM7gX3L9o3yaLPraEggL+O/){.btn .btn-primary target="_blank" rel="noopener"}
+
+
+⚠️ This does not replace the official course and exam registration via [campus.KU](https://campus.ku.de/).
 
 <!-- 
 #### Zoom Room {-}
