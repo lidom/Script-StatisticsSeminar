@@ -58,18 +58,13 @@ In this seminar, you take one statistical method into the lab: you dissect it, b
 * **Grading:**
     * 80% seminar thesis (your written lab report)
     * 20% presentation, in which *every* group member speaks. Victor abandoned his creature; you stand by yours.
-* **Exam registration deadline:** January 21.
+* **Exam registration (via [campus.KU](https://campus.ku.de/)) deadline:** January 21.
 
 ### Lab Group Registration {-}
 
-Please enter your name and email address in the sheet below so we can form the lab groups. If the embedded sheet does not load, open it [in a new tab](https://cryptpad.fr/sheet/#/2/sheet/edit/RPAM7gX3L9o3yaLPraEggL+O/embed/){target="_blank"}.
+Please enter your name and email address in the registration sheet so we can form the lab groups.
 
-```{=html}
-<iframe src="https://cryptpad.fr/sheet/#/2/sheet/edit/RPAM7gX3L9o3yaLPraEggL+O/embed/"
-        width="100%" height="500" style="border:1px solid #ccc; border-radius:4px;"
-        loading="lazy" allow="clipboard-read; clipboard-write"
-        title="Lab group registration sheet"></iframe>
-```
+[Open the registration sheet](https://cryptpad.fr/sheet/#/2/sheet/edit/RPAM7gX3L9o3yaLPraEggL+O/){.btn .btn-primary target="_blank" rel="noopener"}
 
 <!-- 
 #### Zoom Room {-}
