@@ -19,7 +19,7 @@ In our first meetings, we work with the Monte Carlo chapter of my coding intros.
 * Unbiasedness 
 * Consistency 
 * Asymptotic normality, and 
-* Size of tests 
+* Size & Power of statistical tests and confidence intervals 
 :::
 
 by Monte Carlo simulation:

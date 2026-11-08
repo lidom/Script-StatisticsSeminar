@@ -34,7 +34,7 @@
     "href": "01-Monte-Carlo.html#material",
     "title": "1  Monte Carlo Simulations: The Laboratory",
     "section": "",
-    "text": "Unbiasedness\nConsistency\nAsymptotic normality, and\nSize of tests\n\n\n\n\n\nMonte Carlo Simulations with R\nMonte Carlo Simulations with Python",
+    "text": "Unbiasedness\nConsistency\nAsymptotic normality, and\nSize & Power of statistical tests and confidence intervals\n\n\n\n\n\nMonte Carlo Simulations with R\nMonte Carlo Simulations with Python",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Monte Carlo Simulations: The Laboratory</span>"
     ]
