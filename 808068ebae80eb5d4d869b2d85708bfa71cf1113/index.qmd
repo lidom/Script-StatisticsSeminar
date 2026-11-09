@@ -52,6 +52,12 @@ In this seminar, you take one statistical method into the lab: you dissect it, b
 4. **Present it.** Show your creature to the seminar, including the moment it turns on you.
 :::
 
+### eWhiteboard {-}
+
+We use the following eWhiteboard during the lab meetings:
+
+[Open the eWhiteboard (PDF)](https://github.com/lidom/Script-StatisticsSeminar/blob/main/26_27_StatSem_MSc/26_27_eWhiteboard_annotated.pdf){.btn .btn-primary target="_blank" rel="noopener"}
+
 ### Lab Rules {-}
 
 * **Lab groups:** two to three students each.
