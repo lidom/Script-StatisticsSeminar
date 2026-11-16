@@ -9,7 +9,7 @@ suppressPackageStartupMessages(library("tidyverse"))
 
 timetable <- tibble("Event" = c("Kick-off meeting",  "Lab meetings", "Presentations"),
                     "Day"   = c("Monday, November 9", "Mondays",      "TBA"),
-                    "Time"  = c("9:15–12:45",         "9:15–12:45",   "9:15–12:45"),
+                    "Time"  = c("9:15–12:45",         "9:30–12:45",   "TBA"),
                     "Room"  = c("HB-108",             "HB-108",       "HB-108"))
 
 timetable %>% kbl() %>% kable_styling()
