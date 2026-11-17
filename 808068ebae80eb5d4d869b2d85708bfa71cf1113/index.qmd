@@ -73,5 +73,5 @@ The groups are formed, and each group has its topic:
 
 We use the following eWhiteboard during the seminar meetings:
 
-[Open the eWhiteboard (PDF)](https://www.dropbox.com/scl/fi/a8gewu9x97xj0x3fsp31y/26_27_eWhiteboard_annotated.pdf?rlkey=s9t4svy32iigxibruovo5gq4s&dl=0){.btn .btn-primary target="_blank" rel="noopener"}
+[Open the eWhiteboard (PDF)](https://www.dropbox.com/scl/fi/a8gewu9x97xj0x3fsp31y/26_27_eWhiteboard_annotated.pdf?rlkey=s9t4svy32iigxibruovo5gq4s&st=b3fcm7m6&dl=0){.btn .btn-primary target="_blank" rel="noopener"}
 
