@@ -22,9 +22,13 @@ Book your group's seminar meeting in the online planner:
 [Book a meeting slot](https://terminplaner.dfn.de/public/bookings/30d3a64c-356c-4dc3-82ca-a02fd46df1c0){.btn .btn-primary target="_blank" rel="noopener"}
 
 ::: {.spaced-list}
-* **One slot per group per week.** Each slot takes up to three participants, and all of them must belong to the same group. Every group member who attends signs up for the same slot. Do not join a slot that a member of another group has already booked.
-* **Monday slots: in person or online.** You choose whether we meet in room HB-108 or via Zoom. After booking, send an email to [dominik.liebl@ku.de](mailto:dominik.liebl@ku.de) stating which option your group wants.
-* **Tuesday slots: online only.** All Tuesday meetings take place via Zoom. No email is needed.
+* **One slot per group per week.** 
+    * Each slot takes up to three participants, and all of them must belong to the same group. Do not join a slot that a member of another group has already booked.
+    * Do not reserve multiple slots in advance.  
+* **Monday slots: in person or online.** 
+    * You choose whether we meet in room HB-108 or via Zoom. After booking, send an email to [dominik.liebl@ku.de](mailto:dominik.liebl@ku.de) stating which option your group wants.
+* **Tuesday slots: online only.** 
+    * All Tuesday meetings take place via Zoom. No email is needed.
 :::
 
 All online meetings take place in this Zoom room:
@@ -37,39 +41,6 @@ All online meetings take place in this Zoom room:
 The seminar is open to Master's students at the WFI (e.g., BAOR) and in the Master's program in Data Science.
 
 You should have taken at least one Master's-level statistics course (e.g., Predictive Analytics) or hold a quantitative Bachelor's degree. Above all, you should be curious about *how* and *why* statistical methods work, not just how to apply them. 
--->
-
-<!-- 
-::: {.epigraph}
-"Learn from me, if not by my precepts, at least by my example, how dangerous is the acquirement of knowledge."
-
-— Victor Frankenstein, student at Ingolstadt<br>
-Mary Shelley, *Frankenstein; or, The Modern Prometheus* (1818), Vol. I, Ch. IV
-:::
-
-Victor Frankenstein did not fail because his creation was weak. He failed because he brought it to life without understanding it, and then walked away.
-
-Statistical methods are no different. Software makes it easy to stitch together an estimator, a test, and a p-value, and throw the switch. But a method applied without understanding its assumptions, mechanics, and failure modes will sooner or later turn on its user.
-
-{{{< include _stats-monster.qmd >}}}
-
-::: {.tagline}
-Become knowledgeable users of statistical methods.<br>
-Otherwise, they become your monster.
-:::
-
-In this seminar, you take one statistical method into the lab: you dissect it, bring it to life in code, and deliberately make it fail using Monte Carlo simulations. You leave the lab as its master, not its victim.
-
----
-
-## Lab Protocol {-}
-
-::: {.spaced-list}
-1. **Equip the lab.** In the first meetings, we learn together how to build Monte Carlo simulations that make statistical methods fail (@sec-mc).
-2. **Assign the specimens.** Each lab group gets one statistical method (@sec-topics).
-3. **Dissect it.** Work out its assumptions, its mechanics, and how it turns on its users. Write it all up in your seminar thesis (@sec-thesis).
-4. **Present it.** Show your creature to the seminar, including the moment it turns on you.
-::: 
 -->
 
 ## Seminar Rules {-}

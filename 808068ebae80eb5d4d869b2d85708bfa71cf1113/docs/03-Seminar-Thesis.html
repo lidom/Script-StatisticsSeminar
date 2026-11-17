@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Writing the Seminar Thesis – Statistics Seminar</title>
+<title>2&nbsp; Writing the Seminar Thesis &amp; Thesis Template – Statistics Seminar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -112,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-Seminar-Thesis.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-Seminar-Thesis.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis &amp; Thesis Template</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -152,7 +152,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-Seminar-Thesis.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis &amp; Thesis Template</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -179,7 +179,7 @@ window.Quarto = {
   <li><a href="#main-part-2-applying-the-method-to-artificial-data" id="toc-main-part-2-applying-the-method-to-artificial-data" class="nav-link" data-scroll-target="#main-part-2-applying-the-method-to-artificial-data"><span class="header-section-number">2.3</span> Main Part 2: Applying the Method to Artificial Data</a></li>
   <li><a href="#main-part-3-applying-the-method-to-real-data" id="toc-main-part-3-applying-the-method-to-real-data" class="nav-link" data-scroll-target="#main-part-3-applying-the-method-to-real-data"><span class="header-section-number">2.4</span> Main Part 3: Applying the Method to Real Data</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">2.5</span> Conclusion</a></li>
-  <li><a href="#thesis-templates" id="toc-thesis-templates" class="nav-link" data-scroll-target="#thesis-templates"><span class="header-section-number">2.6</span> Thesis Templates</a></li>
+  <li><a href="#thesis-template" id="toc-thesis-template" class="nav-link" data-scroll-target="#thesis-template"><span class="header-section-number">2.6</span> Thesis Template</a></li>
   </ul>
 </nav>
     </div>
@@ -188,7 +188,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-thesis" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis</span></span></h1>
+<h1 class="title"><span id="sec-thesis" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis &amp; Thesis Template</span></span></h1>
 </div>
 
 
@@ -273,11 +273,14 @@ window.Quarto = {
 </div>
 <hr>
 </section>
-<section id="thesis-templates" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="thesis-templates"><span class="header-section-number">2.6</span> Thesis Templates</h2>
-<p>Choose one of the following two templates. Both already implement the formal requirements listed in the <a href="./index.html#seminar-rules">seminar rules</a>.</p>
-<p><strong>Overleaf (LaTeX):</strong> Download the <a href="thesis-template-latex.zip">LaTeX thesis template</a>. On <a href="https://www.overleaf.com">Overleaf</a>, choose <em>New Project → Upload Project</em>, upload the ZIP file, and share the project with your group members. You write the thesis together in the browser; no local LaTeX installation is needed. Overleaf cannot run R or Python: you run your simulation study (<code>R/simulation.R</code>) on your own computer, and it saves the tables and figures that you upload to the <code>results/</code> folder of your Overleaf project. See the included <code>README.md</code> for details.</p>
-<p><strong>Quarto:</strong> Download the <a href="thesis-template.zip">Quarto thesis template</a>. It renders to PDF. It also shows how to keep code out of the PDF: the method is implemented in <code>R/functions.R</code>, the simulation study in <code>R/simulation.R</code>, and <code>thesis.qmd</code> only reads the saved simulation results to show tables and figures. See the included <code>README.md</code> for details.</p>
+<section id="thesis-template" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="thesis-template"><span class="header-section-number">2.6</span> Thesis Template</h2>
+<!-- Choose one of the following two templates. Both already implement the formal requirements listed in the [seminar rules](index.qmd#seminar-rules). -->
+<p><strong>Overleaf (LaTeX):</strong> Download the <a href="thesis-template-latex.zip">LaTeX thesis template</a>. On <a href="https://www.overleaf.com">Overleaf</a>, choose <em>New Project → Upload Project</em>, upload the ZIP file, and share the project with your group members. You write the thesis together in the browser; no local LaTeX installation is needed.</p>
+<p>Overleaf cannot run R or Python: you run your simulation studies on your own computer. Saves the tables and figures and upload to the <code>results/</code> folder of your Overleaf project. See the included <code>README.md</code> for details.</p>
+<!-- 
+**Quarto:** Download the [Quarto thesis template](thesis-template.zip). It renders to PDF. It also shows how to keep code out of the PDF: the method is implemented in `R/functions.R`, the simulation study in `R/simulation.R`, and `thesis.qmd` only reads the saved simulation results to show tables and figures. See the included `README.md` for details. 
+-->
 
 
 </section>

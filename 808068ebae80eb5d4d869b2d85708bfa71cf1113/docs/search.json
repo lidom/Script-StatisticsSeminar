@@ -24,7 +24,7 @@
     "href": "index.html#booking-a-meeting-slot",
     "title": "Statistics Seminar",
     "section": "Booking a Meeting Slot",
-    "text": "Booking a Meeting Slot\nBook your group’s seminar meeting in the online planner:\nBook a meeting slot\n\n\n\nOne slot per group per week. Each slot takes up to three participants, and all of them must belong to the same group. Every group member who attends signs up for the same slot. Do not join a slot that a member of another group has already booked.\n\nMonday slots: in person or online. You choose whether we meet in room HB-108 or via Zoom. After booking, send an email to dominik.liebl@ku.de stating which option your group wants.\n\nTuesday slots: online only. All Tuesday meetings take place via Zoom. No email is needed.\n\n\nAll online meetings take place in this Zoom room:\nJoin the Zoom meeting",
+    "text": "Booking a Meeting Slot\nBook your group’s seminar meeting in the online planner:\nBook a meeting slot\n\n\n\nOne slot per group per week.\n\nEach slot takes up to three participants, and all of them must belong to the same group. Do not join a slot that a member of another group has already booked.\nDo not reserve multiple slots in advance.\n\n\n\n\nMonday slots: in person or online.\n\nYou choose whether we meet in room HB-108 or via Zoom. After booking, send an email to dominik.liebl@ku.de stating which option your group wants.\n\n\n\nTuesday slots: online only.\n\nAll Tuesday meetings take place via Zoom. No email is needed.\n\n\n\n\nAll online meetings take place in this Zoom room:\nJoin the Zoom meeting",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Seminar Organization</span>"
     ]
@@ -60,103 +60,103 @@
     ]
   },
   {
-    "objectID": "01-Monte-Carlo.html",
-    "href": "01-Monte-Carlo.html",
-    "title": "2  Monte Carlo Simulations",
-    "section": "",
-    "text": "2.1 Material\nIn our first meetings, we work with the Monte Carlo chapter of my coding intros. They cover random samples, data generating processes, and how to check\nby Monte Carlo simulation:\nCaution: Parts of the material are still under construction.\nChoose the language you want to use for your seminar thesis. Bring your laptop to the meetings; we code together.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Monte Carlo Simulations</span>"
-    ]
-  },
-  {
-    "objectID": "01-Monte-Carlo.html#material",
-    "href": "01-Monte-Carlo.html#material",
-    "title": "2  Monte Carlo Simulations",
-    "section": "",
-    "text": "Unbiasedness\nConsistency\nAsymptotic normality, and\nSize & Power of statistical tests and confidence intervals\n\n\n\n\n\nMonte Carlo Simulations with R\nMonte Carlo Simulations with Python",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Monte Carlo Simulations</span>"
-    ]
-  },
-  {
     "objectID": "03-Seminar-Thesis.html",
     "href": "03-Seminar-Thesis.html",
-    "title": "2  Writing the Seminar Thesis",
+    "title": "2  Writing the Seminar Thesis & Thesis Template",
     "section": "",
     "text": "2.1 Introduction\n(1 to 2 Pages)",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis & Thesis Template</span>"
     ]
   },
   {
     "objectID": "03-Seminar-Thesis.html#introduction",
     "href": "03-Seminar-Thesis.html#introduction",
-    "title": "2  Writing the Seminar Thesis",
+    "title": "2  Writing the Seminar Thesis & Thesis Template",
     "section": "",
     "text": "What problem does the method solve? Where is it used?\nWhat is the goal of your thesis?\nHow is your thesis structured?",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis</span>"
-    ]
-  },
-  {
-    "objectID": "03-Seminar-Thesis.html#main-part-1-the-model-and-the-method",
-    "href": "03-Seminar-Thesis.html#main-part-1-the-model-and-the-method",
-    "title": "3  Writing the Seminar Thesis",
-    "section": "3.2 Main Part 1: The Model and the Method",
-    "text": "3.2 Main Part 1: The Model and the Method\n\n\nThe model. Describe the data and the statistical model. What do we want to estimate or test?\nThe assumptions. List all assumptions of the method. Explain each assumption in words.\nThe method. Define the method with formulas and explain the idea behind it in words.\nThe theory. State the most important theoretical properties (e.g., unbiasedness, consistency, size and power of a test). Explain which assumptions are needed for them.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Writing the Seminar Thesis</span>"
-    ]
-  },
-  {
-    "objectID": "03-Seminar-Thesis.html#main-part-2-applying-the-method-to-artificial-data",
-    "href": "03-Seminar-Thesis.html#main-part-2-applying-the-method-to-artificial-data",
-    "title": "2  Writing the Seminar Thesis",
-    "section": "2.3 Main Part 2: Applying the Method to Artificial Data",
-    "text": "2.3 Main Part 2: Applying the Method to Artificial Data\nIn a Monte Carlo simulation, you generate artificial data yourself. Therefore, you know the truth and can check how well the method works.\n\n\nAll assumptions hold. Generate data for which all assumptions hold. Check that the method works as the theory says.\nOne assumption is violated. Change the data so that one assumption is violated (e.g., heavy tails, heteroskedasticity, small samples). Violate only one assumption at a time.\nDifferent sample sizes. Repeat each simulation for several sample sizes \\(n\\).\nMeasure the performance, for instance:\n\nestimators: bias, variance, and mean squared error,\nconfidence intervals: coverage probability and average length,\ntests: empirical size and power.\n\nReport the results in tables and plots, and explain them in words: When does the method work well? When does it fail?",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis</span>"
-    ]
-  },
-  {
-    "objectID": "03-Seminar-Thesis.html#main-part-3-applying-the-method-to-real-data",
-    "href": "03-Seminar-Thesis.html#main-part-3-applying-the-method-to-real-data",
-    "title": "2  Writing the Seminar Thesis",
-    "section": "2.4 Main Part 3: Applying the Method to Real Data",
-    "text": "2.4 Main Part 3: Applying the Method to Real Data\n\n\nDescribe the data set: Where does it come from? What are the variables?\nApply the method to the data and interpret the results.\nCheck the assumptions: Are they plausible for these data? What does your simulation study (Main Part 2) tell you about how much you can trust the results?",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis</span>"
-    ]
-  },
-  {
-    "objectID": "03-Seminar-Thesis.html#conclusion",
-    "href": "03-Seminar-Thesis.html#conclusion",
-    "title": "2  Writing the Seminar Thesis",
-    "section": "2.5 Conclusion",
-    "text": "2.5 Conclusion\n(max. 1 Page)\n\n\nSummarize your main findings.\nGive practical advice: When should a user apply the method, and what should a user be careful about?",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis</span>"
-    ]
-  },
-  {
-    "objectID": "03-Seminar-Thesis.html#thesis-templates",
-    "href": "03-Seminar-Thesis.html#thesis-templates",
-    "title": "2  Writing the Seminar Thesis",
-    "section": "2.6 Thesis Templates",
-    "text": "2.6 Thesis Templates\nChoose one of the following two templates. Both already implement the formal requirements listed in the seminar rules.\nOverleaf (LaTeX): Download the LaTeX thesis template. On Overleaf, choose New Project → Upload Project, upload the ZIP file, and share the project with your group members. You write the thesis together in the browser; no local LaTeX installation is needed. Overleaf cannot run R or Python: you run your simulation study (R/simulation.R) on your own computer, and it saves the tables and figures that you upload to the results/ folder of your Overleaf project. See the included README.md for details.\nQuarto: Download the Quarto thesis template. It renders to PDF. It also shows how to keep code out of the PDF: the method is implemented in R/functions.R, the simulation study in R/simulation.R, and thesis.qmd only reads the saved simulation results to show tables and figures. See the included README.md for details.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis & Thesis Template</span>"
     ]
   },
   {
     "objectID": "03-Seminar-Thesis.html#main-part",
     "href": "03-Seminar-Thesis.html#main-part",
-    "title": "2  Writing the Seminar Thesis",
+    "title": "2  Writing the Seminar Thesis & Thesis Template",
     "section": "2.2 Main Part",
     "text": "2.2 Main Part\n(6 to 9 Pages)\n\n2.2.1 Main Part 1: The Model and the Method\n\n\nThe model. Describe the data and the statistical model. What do we want to estimate or test?\nThe assumptions. List all assumptions of the method. Explain each assumption in words.\nThe method. Define the method with formulas and explain the idea behind it in words.\nThe theory. State the most important theoretical properties (e.g., unbiasedness, consistency, size and power of a test). Explain which assumptions are needed for them.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis & Thesis Template</span>"
+    ]
+  },
+  {
+    "objectID": "03-Seminar-Thesis.html#main-part-2-applying-the-method-to-artificial-data",
+    "href": "03-Seminar-Thesis.html#main-part-2-applying-the-method-to-artificial-data",
+    "title": "2  Writing the Seminar Thesis & Thesis Template",
+    "section": "2.3 Main Part 2: Applying the Method to Artificial Data",
+    "text": "2.3 Main Part 2: Applying the Method to Artificial Data\nIn a Monte Carlo simulation, you generate artificial data yourself. Therefore, you know the truth and can check how well the method works.\n\n\nAll assumptions hold. Generate data for which all assumptions hold. Check that the method works as the theory says.\nOne assumption is violated. Change the data so that one assumption is violated (e.g., heavy tails, heteroskedasticity, small samples). Violate only one assumption at a time.\nDifferent sample sizes. Repeat each simulation for several sample sizes \\(n\\).\nMeasure the performance, for instance:\n\nestimators: bias, variance, and mean squared error,\nconfidence intervals: coverage probability and average length,\ntests: empirical size and power.\n\nReport the results in tables and plots, and explain them in words: When does the method work well? When does it fail?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis & Thesis Template</span>"
+    ]
+  },
+  {
+    "objectID": "03-Seminar-Thesis.html#main-part-3-applying-the-method-to-real-data",
+    "href": "03-Seminar-Thesis.html#main-part-3-applying-the-method-to-real-data",
+    "title": "2  Writing the Seminar Thesis & Thesis Template",
+    "section": "2.4 Main Part 3: Applying the Method to Real Data",
+    "text": "2.4 Main Part 3: Applying the Method to Real Data\n\n\nDescribe the data set: Where does it come from? What are the variables?\nApply the method to the data and interpret the results.\nCheck the assumptions: Are they plausible for these data? What does your simulation study (Main Part 2) tell you about how much you can trust the results?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis & Thesis Template</span>"
+    ]
+  },
+  {
+    "objectID": "03-Seminar-Thesis.html#conclusion",
+    "href": "03-Seminar-Thesis.html#conclusion",
+    "title": "2  Writing the Seminar Thesis & Thesis Template",
+    "section": "2.5 Conclusion",
+    "text": "2.5 Conclusion\n(max. 1 Page)\n\n\nSummarize your main findings.\nGive practical advice: When should a user apply the method, and what should a user be careful about?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis & Thesis Template</span>"
+    ]
+  },
+  {
+    "objectID": "03-Seminar-Thesis.html#thesis-templates",
+    "href": "03-Seminar-Thesis.html#thesis-templates",
+    "title": "2  Writing the Seminar Thesis & Thesis Templates",
+    "section": "2.6 Thesis Templates",
+    "text": "2.6 Thesis Templates\nChoose one of the following two templates. Both already implement the formal requirements listed in the seminar rules.\nOverleaf (LaTeX): Download the LaTeX thesis template. On Overleaf, choose New Project → Upload Project, upload the ZIP file, and share the project with your group members. You write the thesis together in the browser; no local LaTeX installation is needed. Overleaf cannot run R or Python: you run your simulation study (R/simulation.R) on your own computer, and it saves the tables and figures that you upload to the results/ folder of your Overleaf project. See the included README.md for details.\nQuarto: Download the Quarto thesis template. It renders to PDF. It also shows how to keep code out of the PDF: the method is implemented in R/functions.R, the simulation study in R/simulation.R, and thesis.qmd only reads the saved simulation results to show tables and figures. See the included README.md for details.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis & Thesis Templates</span>"
+    ]
+  },
+  {
+    "objectID": "01-Monte-Carlo.html",
+    "href": "01-Monte-Carlo.html",
+    "title": "3  Monte Carlo Simulations",
+    "section": "",
+    "text": "3.1 Material\nIn our first meetings, we work with the Monte Carlo chapter of my coding intros. They cover random samples, data generating processes, and how to check\nby Monte Carlo simulation:\nCaution: Parts of the material are still under construction.\nChoose the language you want to use for your seminar thesis. Bring your laptop to the meetings; we code together.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Monte Carlo Simulations</span>"
+    ]
+  },
+  {
+    "objectID": "01-Monte-Carlo.html#material",
+    "href": "01-Monte-Carlo.html#material",
+    "title": "3  Monte Carlo Simulations",
+    "section": "",
+    "text": "Unbiasedness\nConsistency\nAsymptotic normality, and\nSize & Power of statistical tests and confidence intervals\n\n\n\n\n\nMonte Carlo Simulations with R\nMonte Carlo Simulations with Python",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Monte Carlo Simulations</span>"
+    ]
+  },
+  {
+    "objectID": "03-Seminar-Thesis.html#thesis-template",
+    "href": "03-Seminar-Thesis.html#thesis-template",
+    "title": "2  Writing the Seminar Thesis & Thesis Template",
+    "section": "2.6 Thesis Template",
+    "text": "2.6 Thesis Template\n\nOverleaf (LaTeX): Download the LaTeX thesis template. On Overleaf, choose New Project → Upload Project, upload the ZIP file, and share the project with your group members. You write the thesis together in the browser; no local LaTeX installation is needed.\nOverleaf cannot run R or Python: you run your simulation studies on your own computer. Saves the tables and figures and upload to the results/ folder of your Overleaf project. See the included README.md for details.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing the Seminar Thesis & Thesis Template</span>"
     ]
   }
 ]

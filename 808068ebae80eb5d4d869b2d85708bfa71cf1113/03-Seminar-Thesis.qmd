@@ -1,5 +1,5 @@
 <!-- LTeX: language=en-US -->
-# Writing the Seminar Thesis {#sec-thesis}
+# Writing the Seminar Thesis & Thesis Template {#sec-thesis}
 
 Your seminar thesis is a report on one statistical method. It shows that you understand the method: what it assumes, how it works, and when it works well or badly.
 
@@ -63,10 +63,14 @@ In a Monte Carlo simulation, you generate artificial data yourself. Therefore, y
 
 ---
 
-## Thesis Templates
+## Thesis Template
 
-Choose one of the following two templates. Both already implement the formal requirements listed in the [seminar rules](index.qmd#seminar-rules).
+<!-- Choose one of the following two templates. Both already implement the formal requirements listed in the [seminar rules](index.qmd#seminar-rules). -->
 
-**Overleaf (LaTeX):** Download the [LaTeX thesis template](thesis-template-latex.zip). On [Overleaf](https://www.overleaf.com), choose *New Project → Upload Project*, upload the ZIP file, and share the project with your group members. You write the thesis together in the browser; no local LaTeX installation is needed. Overleaf cannot run R or Python: you run your simulation study (`R/simulation.R`) on your own computer, and it saves the tables and figures that you upload to the `results/` folder of your Overleaf project. See the included `README.md` for details.
+**Overleaf (LaTeX):** Download the [LaTeX thesis template](thesis-template-latex.zip). On [Overleaf](https://www.overleaf.com), choose *New Project → Upload Project*, upload the ZIP file, and share the project with your group members. You write the thesis together in the browser; no local LaTeX installation is needed. 
 
-**Quarto:** Download the [Quarto thesis template](thesis-template.zip). It renders to PDF. It also shows how to keep code out of the PDF: the method is implemented in `R/functions.R`, the simulation study in `R/simulation.R`, and `thesis.qmd` only reads the saved simulation results to show tables and figures. See the included `README.md` for details.
+Overleaf cannot run R or Python: you run your simulation studies on your own computer. Saves the tables and figures and upload to the `results/` folder of your Overleaf project. See the included `README.md` for details.
+
+<!-- 
+**Quarto:** Download the [Quarto thesis template](thesis-template.zip). It renders to PDF. It also shows how to keep code out of the PDF: the method is implemented in `R/functions.R`, the simulation study in `R/simulation.R`, and `thesis.qmd` only reads the saved simulation results to show tables and figures. See the included `README.md` for details. 
+-->
