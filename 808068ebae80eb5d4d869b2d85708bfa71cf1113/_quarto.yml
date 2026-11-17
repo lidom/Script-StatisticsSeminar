@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - thesis-template.zip
+    - thesis-template-latex.zip
   
 book:
   title: Statistics Seminar
@@ -15,10 +16,9 @@ book:
   search: true
   chapters:
     - index.qmd
-    - 01-Monte-Carlo.qmd
-    - 02-Topics.qmd
+    #- 02-Topics.qmd
     - 03-Seminar-Thesis.qmd
-
+    - 01-Monte-Carlo.qmd
 bibliography: references.bib
 
 format:

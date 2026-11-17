@@ -1,15 +1,9 @@
 <!-- LTeX: language=en-US -->
-# Monte Carlo Simulations: The Laboratory {#sec-mc}
+# Monte Carlo Simulations {#sec-mc}
 
-```
-> fit <- lm(y ~ ., data = everything)
-Warning message:
-  The creature is alive. Did you check the assumptions?
-```
+Real data never tell us the truth. We do not know the true parameter, and we do not know whether the assumptions of our method hold. In a Monte Carlo simulation, *we* choose the data generating process, so we know the truth, and we can watch how a method behaves when its assumptions hold and when they break.
 
-Real data never tell us the truth. We do not know the true parameter, and we do not know whether the assumptions of our method hold. In a Monte Carlo simulation, *we* are the creators: we choose the data generating process, so we know the truth, and we can watch how a method behaves when its assumptions hold and when they break.
-
-This makes Monte Carlo simulations the laboratory of this seminar. Before you take your own method into the lab, we build this laboratory together in the first meetings of the seminar. Afterwards, you will use it in your seminar thesis to investigate when your method works and when it fails (see @sec-thesis).
+This makes Monte Carlo simulations the main tool of this seminar. Before you study your own method, we learn together how to build Monte Carlo simulations in the first meetings of the seminar. Afterwards, you will use them in your seminar thesis to investigate when your method works and when it fails (see @sec-thesis).
 
 ## Material
 

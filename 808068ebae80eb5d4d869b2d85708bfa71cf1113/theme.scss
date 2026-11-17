@@ -76,7 +76,7 @@ hr::after {
   letter-spacing: 0.3em;
 }
 
-// Anatomy of a method; use via ::: {.skeleton}, {.organs}, {.spark}, {.monster}
+// Parts of the thesis (class names kept from the former Frankenstein theme); use via ::: {.skeleton}, {.organs}, {.spark}, {.monster}
 .skeleton, .organs, .spark, .monster {
   border: 1px dashed $primary;
   padding: 0.8em 1em;
@@ -89,14 +89,14 @@ hr::after {
   color: $primary;
   margin-bottom: 0.4em;
 }
-.skeleton::before { content: "🦴 Skeleton: the assumptions"; }
-.organs::before   { content: "🫀 Organs: how the method works"; }
-.spark::before    { content: "⚡ Spark: bringing it to life in code"; }
+.skeleton::before { content: "Assumptions"; }
+.organs::before   { content: "How the method works"; }
+.spark::before    { content: "Implementation in code"; }
 .monster {
   border-color: $monster-color;
 }
 .monster::before {
-  content: "🧟 When it turns on you";
+  content: "When the method fails";
   color: $monster-color;
 }
 .skeleton > :last-child, .organs > :last-child,

@@ -1,78 +1,72 @@
 <!-- LTeX: language=en-US -->
 # Writing the Seminar Thesis {#sec-thesis}
 
-Your seminar thesis is a lab report on one statistical method. Its goal is to show that you have become a knowledgeable user of this method: you know what it assumes, how it works, how to run it, and, most importantly, when it turns on you.
+Your seminar thesis is a report on one statistical method. It shows that you understand the method: what it assumes, how it works, and when it works well or badly.
 
-Structure your thesis along the anatomy of your method.
+Structure your thesis in the following five parts. Write the three main parts first. Write the introduction and the conclusion at the end, when you know what your thesis shows.
 
----
+## Introduction
 
-## The Skeleton: Assumptions
-
-::: {.skeleton}
-State the statistical model and all assumptions under which the method is justified.
-:::
+(1 to 2 Pages)
 
 ::: {.spaced-list}
-* Describe the setting: What kind of data? What is the parameter of interest $\theta$?
-* State the assumptions precisely, e.g., i.i.d. sampling, moment conditions, distributional assumptions, model specification, sample size requirements.
-* For each assumption, explain in words what it means and *why* the method needs it. Where in the derivation or proof is it used?
-* Discuss whether the assumptions are plausible in typical applications.
+* What problem does the method solve? Where is it used?
+* What is the goal of your thesis?
+* How is your thesis structured?
 :::
 
-## The Organs: How the Method Works
 
-::: {.organs}
-Explain the mechanics of the method: the estimator, test, or algorithm and its theoretical properties.
-:::
+## Main Part
+
+(6 to 9 Pages)
+
+### Main Part 1: The Model and the Method
 
 ::: {.spaced-list}
-* Define the method formally and give the intuition behind it.
-* State the main theoretical results (e.g., unbiasedness, consistency, asymptotic distribution, size and power of a test) and explain where the assumptions enter.
-* Use a simple example to illustrate how the method works.
+* **The model.** Describe the data and the statistical model. What do we want to estimate or test?
+* **The assumptions.** List all assumptions of the method. Explain each assumption in words.
+* **The method.** Define the method with formulas and explain the idea behind it in words.
+* **The theory.** State the most important theoretical properties (e.g., unbiasedness, consistency, size and power of a test). Explain which assumptions are needed for them.
 :::
 
-## The Spark: Bringing It to Life in Code
+## Main Part 2: Applying the Method to Artificial Data
 
-::: {.spark}
-Implement the method and apply it, so that the reader sees it working.
-:::
+In a Monte Carlo simulation, you generate artificial data yourself. Therefore, you know the truth and can check how well the method works.
 
 ::: {.spaced-list}
-* Show how to apply the method in R or Python. Implementing core parts yourself is the best way to understand them.
-* Apply the method to a (real or simulated) data example and interpret the results carefully.
-:::
-
-## When It Turns on You: Failure Investigations
-
-::: {.monster}
-Use Monte Carlo simulations to investigate when the method works, and how it fails when its assumptions are violated.
-:::
-
-This is the core of your thesis. Design your simulation study like an experiment:
-
-::: {.spaced-list}
-* **Baseline.** Start with a data generating process under which *all* assumptions hold. Check that the method behaves as the theory predicts.
-* **Violate one assumption at a time.** Change the data generating process so that exactly one assumption breaks (e.g., heavy tails, heteroskedasticity, dependence, misspecification, small samples). This way, you know which assumption is responsible for a failure.
-* **Vary the severity.** Let the violation range from mild to severe, and vary the sample size $n$. Does the failure vanish as $n$ grows, or does it persist?
-* **Measure the damage.** Choose performance measures that fit your method, for instance:
+* **All assumptions hold.** Generate data for which all assumptions hold. Check that the method works as the theory says.
+* **One assumption is violated.** Change the data so that one assumption is violated (e.g., heavy tails, heteroskedasticity, small samples). Violate only one assumption at a time.
+* **Different sample sizes.** Repeat each simulation for several sample sizes $n$.
+* **Measure the performance**, for instance:
   * estimators: bias, variance, and mean squared error,
   * confidence intervals: coverage probability and average length,
   * tests: empirical size and power.
-* **Make it reproducible.** Use enough Monte Carlo replications, set a random seed, and include your code.
-* **Report clearly.** Summarize the results in tables and plots, and interpret them: When can a user safely rely on the method? What warning signs should a user look for in practice?
+* **Report the results** in tables and plots, and explain them in words: When does the method work well? When does it fail?
+:::
+
+## Main Part 3: Applying the Method to Real Data
+
+::: {.spaced-list}
+* Describe the data set: Where does it come from? What are the variables?
+* Apply the method to the data and interpret the results.
+* Check the assumptions: Are they plausible for these data? What does your simulation study (Main Part 2) tell you about how much you can trust the results?
+:::
+
+## Conclusion
+
+(max. 1 Page)
+
+::: {.spaced-list}
+* Summarize your main findings.
+* Give practical advice: When should a user apply the method, and what should a user be careful about?
 :::
 
 ---
 
-## Formalities
+## Thesis Templates
 
-* **Length:** 15–20 pages main text, including figures and tables; excluding title page, table of contents, references, and appendix.
-* **Format:** 12 pt font, 1.5 line spacing, 2.5 cm margins, submitted as a PDF.
-* **Code:** Code does not belong in the main text. Show only short snippets that help the reader understand the method. Submit your full code separately, such that all results can be reproduced (fixed random seed).
-* **Submission:** `thesis.pdf` and a ZIP file with your complete thesis folder (text, code, and literature).
-* **Submission deadline:** TBA
+Choose one of the following two templates. Both already implement the formal requirements listed in the [seminar rules](index.qmd#seminar-rules).
 
-### Thesis Template {-}
+**Overleaf (LaTeX):** Download the [LaTeX thesis template](thesis-template-latex.zip). On [Overleaf](https://www.overleaf.com), choose *New Project → Upload Project*, upload the ZIP file, and share the project with your group members. You write the thesis together in the browser; no local LaTeX installation is needed. Overleaf cannot run R or Python: you run your simulation study (`R/simulation.R`) on your own computer, and it saves the tables and figures that you upload to the `results/` folder of your Overleaf project. See the included `README.md` for details.
 
-Download the [Quarto thesis template](thesis-template.zip). It already implements all formal requirements and renders to PDF. It also shows how to keep code out of the PDF: the method is implemented in `R/functions.R`, the simulation study in `R/simulation.R`, and `thesis.qmd` only reads the saved simulation results to show tables and figures. See the included `README.md` for details.
+**Quarto:** Download the [Quarto thesis template](thesis-template.zip). It renders to PDF. It also shows how to keep code out of the PDF: the method is implemented in `R/functions.R`, the simulation study in `R/simulation.R`, and `thesis.qmd` only reads the saved simulation results to show tables and figures. See the included `README.md` for details.

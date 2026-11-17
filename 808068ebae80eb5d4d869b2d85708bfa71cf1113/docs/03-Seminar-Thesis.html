@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Writing the Seminar Thesis – Statistics Seminar</title>
+<title>2&nbsp; Writing the Seminar Thesis – Statistics Seminar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./02-Topics.html" rel="prev">
+<link href="./01-Monte-Carlo.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -111,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-Seminar-Thesis.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-Seminar-Thesis.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -145,25 +146,19 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome to the Lab</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./01-Monte-Carlo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Monte Carlo Simulations: The Laboratory</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./02-Topics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Topics: The Specimens</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Seminar Organization</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-Seminar-Thesis.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-Monte-Carlo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Monte Carlo Simulations</span></span></a>
   </div>
 </li>
     </ul>
@@ -176,14 +171,15 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-skeleton-assumptions" id="toc-the-skeleton-assumptions" class="nav-link active" data-scroll-target="#the-skeleton-assumptions"><span class="header-section-number">3.1</span> The Skeleton: Assumptions</a></li>
-  <li><a href="#the-organs-how-the-method-works" id="toc-the-organs-how-the-method-works" class="nav-link" data-scroll-target="#the-organs-how-the-method-works"><span class="header-section-number">3.2</span> The Organs: How the Method Works</a></li>
-  <li><a href="#the-spark-bringing-it-to-life-in-code" id="toc-the-spark-bringing-it-to-life-in-code" class="nav-link" data-scroll-target="#the-spark-bringing-it-to-life-in-code"><span class="header-section-number">3.3</span> The Spark: Bringing It to Life in Code</a></li>
-  <li><a href="#when-it-turns-on-you-failure-investigations" id="toc-when-it-turns-on-you-failure-investigations" class="nav-link" data-scroll-target="#when-it-turns-on-you-failure-investigations"><span class="header-section-number">3.4</span> When It Turns on You: Failure Investigations</a></li>
-  <li><a href="#formalities" id="toc-formalities" class="nav-link" data-scroll-target="#formalities"><span class="header-section-number">3.5</span> Formalities</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">2.1</span> Introduction</a></li>
+  <li><a href="#main-part" id="toc-main-part" class="nav-link" data-scroll-target="#main-part"><span class="header-section-number">2.2</span> Main Part</a>
   <ul class="collapse">
-  <li><a href="#thesis-template" id="toc-thesis-template" class="nav-link" data-scroll-target="#thesis-template">Thesis Template</a></li>
+  <li><a href="#main-part-1-the-model-and-the-method" id="toc-main-part-1-the-model-and-the-method" class="nav-link" data-scroll-target="#main-part-1-the-model-and-the-method"><span class="header-section-number">2.2.1</span> Main Part 1: The Model and the Method</a></li>
   </ul></li>
+  <li><a href="#main-part-2-applying-the-method-to-artificial-data" id="toc-main-part-2-applying-the-method-to-artificial-data" class="nav-link" data-scroll-target="#main-part-2-applying-the-method-to-artificial-data"><span class="header-section-number">2.3</span> Main Part 2: Applying the Method to Artificial Data</a></li>
+  <li><a href="#main-part-3-applying-the-method-to-real-data" id="toc-main-part-3-applying-the-method-to-real-data" class="nav-link" data-scroll-target="#main-part-3-applying-the-method-to-real-data"><span class="header-section-number">2.4</span> Main Part 3: Applying the Method to Real Data</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">2.5</span> Conclusion</a></li>
+  <li><a href="#thesis-templates" id="toc-thesis-templates" class="nav-link" data-scroll-target="#thesis-templates"><span class="header-section-number">2.6</span> Thesis Templates</a></li>
   </ul>
 </nav>
     </div>
@@ -192,7 +188,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-thesis" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis</span></span></h1>
+<h1 class="title"><span id="sec-thesis" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Writing the Seminar Thesis</span></span></h1>
 </div>
 
 
@@ -210,86 +206,80 @@ window.Quarto = {
 
 
 <!-- LTeX: language=en-US -->
-<p>Your seminar thesis is a lab report on one statistical method. Its goal is to show that you have become a knowledgeable user of this method: you know what it assumes, how it works, how to run it, and, most importantly, when it turns on you.</p>
-<p>Structure your thesis along the anatomy of your method.</p>
-<hr>
-<section id="the-skeleton-assumptions" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="the-skeleton-assumptions"><span class="header-section-number">3.1</span> The Skeleton: Assumptions</h2>
-<div class="skeleton">
-<p>State the statistical model and all assumptions under which the method is justified.</p>
-</div>
+<p>Your seminar thesis is a report on one statistical method. It shows that you understand the method: what it assumes, how it works, and when it works well or badly.</p>
+<p>Structure your thesis in the following five parts. Write the three main parts first. Write the introduction and the conclusion at the end, when you know what your thesis shows.</p>
+<section id="introduction" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2.1</span> Introduction</h2>
+<p>(1 to 2 Pages)</p>
 <div class="spaced-list">
 <ul>
-<li>Describe the setting: What kind of data? What is the parameter of interest <span class="math inline">\(\theta\)</span>?</li>
-<li>State the assumptions precisely, e.g., i.i.d. sampling, moment conditions, distributional assumptions, model specification, sample size requirements.</li>
-<li>For each assumption, explain in words what it means and <em>why</em> the method needs it. Where in the derivation or proof is it used?</li>
-<li>Discuss whether the assumptions are plausible in typical applications.</li>
+<li>What problem does the method solve? Where is it used?</li>
+<li>What is the goal of your thesis?</li>
+<li>How is your thesis structured?</li>
 </ul>
 </div>
 </section>
-<section id="the-organs-how-the-method-works" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="the-organs-how-the-method-works"><span class="header-section-number">3.2</span> The Organs: How the Method Works</h2>
-<div class="organs">
-<p>Explain the mechanics of the method: the estimator, test, or algorithm and its theoretical properties.</p>
-</div>
+<section id="main-part" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="main-part"><span class="header-section-number">2.2</span> Main Part</h2>
+<p>(6 to 9 Pages)</p>
+<section id="main-part-1-the-model-and-the-method" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="main-part-1-the-model-and-the-method"><span class="header-section-number">2.2.1</span> Main Part 1: The Model and the Method</h3>
 <div class="spaced-list">
 <ul>
-<li>Define the method formally and give the intuition behind it.</li>
-<li>State the main theoretical results (e.g., unbiasedness, consistency, asymptotic distribution, size and power of a test) and explain where the assumptions enter.</li>
-<li>Use a simple example to illustrate how the method works.</li>
+<li><strong>The model.</strong> Describe the data and the statistical model. What do we want to estimate or test?</li>
+<li><strong>The assumptions.</strong> List all assumptions of the method. Explain each assumption in words.</li>
+<li><strong>The method.</strong> Define the method with formulas and explain the idea behind it in words.</li>
+<li><strong>The theory.</strong> State the most important theoretical properties (e.g., unbiasedness, consistency, size and power of a test). Explain which assumptions are needed for them.</li>
 </ul>
 </div>
 </section>
-<section id="the-spark-bringing-it-to-life-in-code" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="the-spark-bringing-it-to-life-in-code"><span class="header-section-number">3.3</span> The Spark: Bringing It to Life in Code</h2>
-<div class="spark">
-<p>Implement the method and apply it, so that the reader sees it working.</p>
-</div>
-<div class="spaced-list">
-<ul>
-<li>Show how to apply the method in R or Python. Implementing core parts yourself is the best way to understand them.</li>
-<li>Apply the method to a (real or simulated) data example and interpret the results carefully.</li>
-</ul>
-</div>
 </section>
-<section id="when-it-turns-on-you-failure-investigations" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="when-it-turns-on-you-failure-investigations"><span class="header-section-number">3.4</span> When It Turns on You: Failure Investigations</h2>
-<div class="monster">
-<p>Use Monte Carlo simulations to investigate when the method works, and how it fails when its assumptions are violated.</p>
-</div>
-<p>This is the core of your thesis. Design your simulation study like an experiment:</p>
+<section id="main-part-2-applying-the-method-to-artificial-data" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="main-part-2-applying-the-method-to-artificial-data"><span class="header-section-number">2.3</span> Main Part 2: Applying the Method to Artificial Data</h2>
+<p>In a Monte Carlo simulation, you generate artificial data yourself. Therefore, you know the truth and can check how well the method works.</p>
 <div class="spaced-list">
 <ul>
-<li><strong>Baseline.</strong> Start with a data generating process under which <em>all</em> assumptions hold. Check that the method behaves as the theory predicts.</li>
-<li><strong>Violate one assumption at a time.</strong> Change the data generating process so that exactly one assumption breaks (e.g., heavy tails, heteroskedasticity, dependence, misspecification, small samples). This way, you know which assumption is responsible for a failure.</li>
-<li><strong>Vary the severity.</strong> Let the violation range from mild to severe, and vary the sample size <span class="math inline">\(n\)</span>. Does the failure vanish as <span class="math inline">\(n\)</span> grows, or does it persist?</li>
-<li><strong>Measure the damage.</strong> Choose performance measures that fit your method, for instance:
+<li><strong>All assumptions hold.</strong> Generate data for which all assumptions hold. Check that the method works as the theory says.</li>
+<li><strong>One assumption is violated.</strong> Change the data so that one assumption is violated (e.g., heavy tails, heteroskedasticity, small samples). Violate only one assumption at a time.</li>
+<li><strong>Different sample sizes.</strong> Repeat each simulation for several sample sizes <span class="math inline">\(n\)</span>.</li>
+<li><strong>Measure the performance</strong>, for instance:
 <ul>
 <li>estimators: bias, variance, and mean squared error,</li>
 <li>confidence intervals: coverage probability and average length,</li>
 <li>tests: empirical size and power.</li>
 </ul></li>
-<li><strong>Make it reproducible.</strong> Use enough Monte Carlo replications, set a random seed, and include your code.</li>
-<li><strong>Report clearly.</strong> Summarize the results in tables and plots, and interpret them: When can a user safely rely on the method? What warning signs should a user look for in practice?</li>
+<li><strong>Report the results</strong> in tables and plots, and explain them in words: When does the method work well? When does it fail?</li>
+</ul>
+</div>
+</section>
+<section id="main-part-3-applying-the-method-to-real-data" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="main-part-3-applying-the-method-to-real-data"><span class="header-section-number">2.4</span> Main Part 3: Applying the Method to Real Data</h2>
+<div class="spaced-list">
+<ul>
+<li>Describe the data set: Where does it come from? What are the variables?</li>
+<li>Apply the method to the data and interpret the results.</li>
+<li>Check the assumptions: Are they plausible for these data? What does your simulation study (Main Part 2) tell you about how much you can trust the results?</li>
+</ul>
+</div>
+</section>
+<section id="conclusion" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">2.5</span> Conclusion</h2>
+<p>(max. 1 Page)</p>
+<div class="spaced-list">
+<ul>
+<li>Summarize your main findings.</li>
+<li>Give practical advice: When should a user apply the method, and what should a user be careful about?</li>
 </ul>
 </div>
 <hr>
 </section>
-<section id="formalities" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="formalities"><span class="header-section-number">3.5</span> Formalities</h2>
-<ul>
-<li><strong>Length:</strong> 15–20 pages main text, including figures and tables; excluding title page, table of contents, references, and appendix.</li>
-<li><strong>Format:</strong> 12 pt font, 1.5 line spacing, 2.5 cm margins, submitted as a PDF.</li>
-<li><strong>Code:</strong> Code does not belong in the main text. Show only short snippets that help the reader understand the method. Submit your full code separately, such that all results can be reproduced (fixed random seed).</li>
-<li><strong>Submission:</strong> <code>thesis.pdf</code> and a ZIP file with your complete thesis folder (text, code, and literature).</li>
-<li><strong>Submission deadline:</strong> TBA</li>
-</ul>
-<section id="thesis-template" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="thesis-template">Thesis Template</h3>
-<p>Download the <a href="thesis-template.zip">Quarto thesis template</a>. It already implements all formal requirements and renders to PDF. It also shows how to keep code out of the PDF: the method is implemented in <code>R/functions.R</code>, the simulation study in <code>R/simulation.R</code>, and <code>thesis.qmd</code> only reads the saved simulation results to show tables and figures. See the included <code>README.md</code> for details.</p>
+<section id="thesis-templates" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="thesis-templates"><span class="header-section-number">2.6</span> Thesis Templates</h2>
+<p>Choose one of the following two templates. Both already implement the formal requirements listed in the <a href="./index.html#seminar-rules">seminar rules</a>.</p>
+<p><strong>Overleaf (LaTeX):</strong> Download the <a href="thesis-template-latex.zip">LaTeX thesis template</a>. On <a href="https://www.overleaf.com">Overleaf</a>, choose <em>New Project → Upload Project</em>, upload the ZIP file, and share the project with your group members. You write the thesis together in the browser; no local LaTeX installation is needed. Overleaf cannot run R or Python: you run your simulation study (<code>R/simulation.R</code>) on your own computer, and it saves the tables and figures that you upload to the <code>results/</code> folder of your Overleaf project. See the included <code>README.md</code> for details.</p>
+<p><strong>Quarto:</strong> Download the <a href="thesis-template.zip">Quarto thesis template</a>. It renders to PDF. It also shows how to keep code out of the PDF: the method is implemented in <code>R/functions.R</code>, the simulation study in <code>R/simulation.R</code>, and <code>thesis.qmd</code> only reads the saved simulation results to show tables and figures. See the included <code>README.md</code> for details.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -859,11 +849,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./02-Topics.html" class="pagination-link" aria-label="Topics: The Specimens">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Topics: The Specimens</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Seminar Organization">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Seminar Organization</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./01-Monte-Carlo.html" class="pagination-link" aria-label="Monte Carlo Simulations">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Monte Carlo Simulations</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

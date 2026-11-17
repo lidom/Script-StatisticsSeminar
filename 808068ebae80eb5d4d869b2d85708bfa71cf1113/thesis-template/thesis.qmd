@@ -47,22 +47,20 @@ sim <- readRDS("results/simulation.rds")
 \newpage
 
 <!--
-  Page limit: 15–20 pages for the main text (Sections 1 to 6), including
+  Page limit: 8–12 pages for the main text (Sections 1 to 5), including
   figures and tables. Title page, table of contents, references, and
   appendix do not count.
 -->
 
 # Introduction
 
-Motivate the method: Which problem does it solve, and where is it used? State the goal of your thesis and give an overview of its structure.
+*Write this part at the end.* What problem does the method solve, and where is it used? What is the goal of your thesis, and how is it structured?
 
-# Assumptions
+# Main Part 1: The Model and the Method
 
-State the statistical model and all assumptions under which the method is justified. Explain what each assumption means and where it is needed.
+Describe the data and the statistical model, and list all assumptions of the method. Explain each assumption in words.
 
-# How the Method Works
-
-Define the method formally, give the intuition behind it, and state its main theoretical properties. Cite your sources, e.g., @Silverman1986.
+Define the method with formulas, explain the idea behind it, and state its most important theoretical properties. Explain which assumptions are needed for them. Cite your sources, e.g., @Silverman1986.
 
 Show code only when it helps the reader to understand the method, and keep such snippets short:
 
@@ -75,11 +73,7 @@ ci_mean <- function(x, level = 0.95) {
 }
 ```
 
-# Application
-
-Apply the method to a (real or simulated) data example and interpret the results.
-
-# Simulation Study
+# Main Part 2: Applying the Method to Artificial Data
 
 Describe the design of your simulation study: the data generating processes, which assumption each of them violates, the sample sizes, the number of replications, and the performance measures.
 
@@ -110,9 +104,13 @@ legend("bottomright", legend = unique(res$dgp), pch = seq_along(unique(res$dgp))
 
 Interpret the results: When can a user rely on the method? What should a user watch out for in practice?
 
+# Main Part 3: Applying the Method to Real Data
+
+Describe the data set, apply the method, and interpret the results. Are the assumptions plausible for these data? What does your simulation study tell you about how much you can trust the results?
+
 # Conclusion
 
-Summarize your findings and give practical recommendations.
+*Write this part at the end.* Summarize your main findings and give practical advice: When should a user apply the method, and what should a user be careful about?
 
 # References {.unnumbered}
 
