@@ -35,6 +35,10 @@ All online meetings take place in this Zoom room:
 
 [Join the Zoom meeting](https://kuei.zoom-x.de/j/66424019307){.btn .btn-primary target="_blank" rel="noopener"}
 
+
+
+
+
 <!-- 
 ## Who Is the Seminar For? {-}
 
@@ -62,9 +66,9 @@ The groups are formed, and each group has its topic:
 
 | Group | Topic |
 |:--|:--|
-| 1 | Linear & Ridge Regression Analysis |
-| 2 | Nonparametric Density Estimation |
-| 3 | (Multiple) Testing |
+| 1 | **REG:** Linear & Ridge Regression Analysis |
+| 2 | **DEN:** Nonparametric Density Estimation |
+| 3 | **TES:** (Multiple) Testing |
 
 ⚠️ Being assigned to a group does not replace the official course and exam registration via [campus.KU](https://campus.ku.de/).
 
