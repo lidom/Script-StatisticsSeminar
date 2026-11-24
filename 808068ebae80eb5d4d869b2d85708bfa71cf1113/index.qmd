@@ -7,37 +7,29 @@
 suppressPackageStartupMessages(library("kableExtra"))
 suppressPackageStartupMessages(library("tidyverse"))
 
-timetable <- tibble("Event" = c("Kick-off meeting",   "Seminar meetings", "Seminar meetings", "Presentations"),
-                    "Day"   = c("Monday, November 9", "Mondays",       "Tuesdays",      "Monday, January 25"),
-                    "Time"  = c("9:15–12:45",         "Booked slot",   "Booked slot",   "TBA"),
-                    "Room"  = c("HB-108",             "HB-108 or Zoom","Zoom only",     "HB-108"))
+timetable <- tibble("Event" = c("Kick-off meeting",   "Seminar meetings", "Seminar meetings", "Thesis submission", "Presentations"),
+                    "Day"   = c("Monday, November 9", "Mondays",       "Tuesdays",      "Friday, January 22", "Monday, January 25"),
+                    "Time"  = c("9:15–12:45",         "Booked slot",   "Booked slot",   "Before midnight",    "TBA"),
+                    "Room"  = c("HB-108",             "HB-108 or Zoom","Zoom only",     "By email",           "HB-108"))
 
 timetable %>% kbl() %>% kable_styling()
 ```
 
 ## Booking a Meeting Slot {-}
 
-Book your group's seminar meeting in the online planner:
+Book your group's weekly meeting in the online planner:
 
 [Book a meeting slot](https://terminplaner.dfn.de/public/bookings/30d3a64c-356c-4dc3-82ca-a02fd46df1c0){.btn .btn-primary target="_blank" rel="noopener"}
 
 ::: {.spaced-list}
-* **One slot per group per week.** 
-    * Each slot takes up to three participants, and all of them must belong to the same group. Do not join a slot that a member of another group has already booked.
-    * Do not reserve multiple slots in advance.  
-* **Monday slots: in person or online.** 
-    * You choose whether we meet in room HB-108 or via Zoom. After booking, send an email to [dominik.liebl@ku.de](mailto:dominik.liebl@ku.de) stating which option your group wants.
-* **Tuesday slots: online only.** 
-    * All Tuesday meetings take place via Zoom. No email is needed.
+* **One slot per group per week.** A slot holds up to three participants, all from the same group. Do not join a slot booked by another group, and do not book several slots in advance.
+* **Monday: in person (HB-108) or via Zoom, your choice.** After booking, email [dominik.liebl@ku.de](mailto:dominik.liebl@ku.de) which option your group wants.
+* **Tuesday: Zoom only.** No email needed.
 :::
 
-All online meetings take place in this Zoom room:
+All online meetings use this Zoom room:
 
-[Join the Zoom meeting](https://kuei.zoom-x.de/j/66424019307){.btn .btn-primary target="_blank" rel="noopener"}
-
-
-
-
+[https://kuei.zoom-x.de/j/66424019307](https://kuei.zoom-x.de/j/66424019307){.btn .btn-primary target="_blank" rel="noopener"}
 
 <!-- 
 ## Who Is the Seminar For? {-}
@@ -49,20 +41,19 @@ You should have taken at least one Master's-level statistics course (e.g., Predi
 
 ## Seminar Rules {-}
 
-* **Groups:** two to three students each.
+* **Exam registration:** via [campus.KU](https://campus.ku.de/) by January 21.
 * **Grading:**
     * 80% seminar thesis
-    * 20% presentation, in which *every* group member speaks.
+    * 20% presentation (***every* group member speaks**)
 * **Seminar thesis:**
-    * **Length:** 8–12 pages main text, including figures and tables; title page, table of contents, references, and appendix do not count.
-    * **Format:** PDF with 12 pt font, 1.5 line spacing, and 2.5 cm margins. The thesis templates (@sec-thesis) already meet these requirements.
-    * **Code:** Only short snippets in the main text. Submit the full code separately so that all results can be reproduced (fixed random seed).
-    * **Submission:** `thesis.pdf` and a ZIP file of your complete thesis folder (text, code, and literature). Deadline: TBA.
-* **Exam registration (via [campus.KU](https://campus.ku.de/)) deadline:** January 21.
+    * **Length:** 6–12 pages of main text, including figures and tables. Title page, table of contents, references, and appendix do not count.
+    * **Format:** PDF, 12 pt font, 1.5 line spacing, 2.5 cm margins. The thesis template (@sec-thesis) already meets these requirements.
+    * **Code:** Only short snippets in the main text. Submit the full code separately so that all results are **reproducible** (fix the random seed).
+    * **Submission:** Email your thesis PDF and code file(s) to [dominik.liebl@ku.de](mailto:dominik.liebl@ku.de). **Deadline: Friday, January 22, before midnight.**
 
 ## Groups and Topics {-}
 
-The groups are formed, and each group has its topic:
+Each group has two to three students. The groups and their topics:
 
 | Group | Topic |
 |:--|:--|
@@ -70,12 +61,10 @@ The groups are formed, and each group has its topic:
 | 2 | **DEN:** Nonparametric Density Estimation |
 | 3 | **TES:** (Multiple) Testing |
 
-⚠️ Being assigned to a group does not replace the official course and exam registration via [campus.KU](https://campus.ku.de/).
-
+⚠️ Your group assignment does not replace the official course and exam registration via [campus.KU](https://campus.ku.de/).
 
 ## eWhiteboard {-}
 
-We use the following eWhiteboard during the seminar meetings:
+We use this eWhiteboard in the seminar meetings:
 
 [Open the eWhiteboard (PDF)](https://www.dropbox.com/scl/fi/a8gewu9x97xj0x3fsp31y/26_27_eWhiteboard_annotated.pdf?rlkey=s9t4svy32iigxibruovo5gq4s&st=b3fcm7m6&dl=0){.btn .btn-primary target="_blank" rel="noopener"}
-

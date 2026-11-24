@@ -14,7 +14,7 @@
     "href": "index.html#timetable",
     "title": "Statistics Seminar",
     "section": "Timetable",
-    "text": "Timetable\n\n\n\n\nEvent\nDay\nTime\nRoom\n\n\n\nKick-off meeting\nMonday, November 9\n9:15–12:45\nHB-108\n\n\nSeminar meetings\nMondays\nBooked slot\nHB-108 or Zoom\n\n\nSeminar meetings\nTuesdays\nBooked slot\nZoom only\n\n\nPresentations\nMonday, January 25\nTBA\nHB-108",
+    "text": "Timetable\n\n\n\n\nEvent\nDay\nTime\nRoom\n\n\n\nKick-off meeting\nMonday, November 9\n9:15–12:45\nHB-108\n\n\nSeminar meetings\nMondays\nBooked slot\nHB-108 or Zoom\n\n\nSeminar meetings\nTuesdays\nBooked slot\nZoom only\n\n\nThesis submission\nFriday, January 22\nBefore midnight\nBy email\n\n\nPresentations\nMonday, January 25\nTBA\nHB-108",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Seminar Organization</span>"
     ]
@@ -24,7 +24,7 @@
     "href": "index.html#booking-a-meeting-slot",
     "title": "Statistics Seminar",
     "section": "Booking a Meeting Slot",
-    "text": "Booking a Meeting Slot\nBook your group’s seminar meeting in the online planner:\nBook a meeting slot\n\n\n\nOne slot per group per week.\n\nEach slot takes up to three participants, and all of them must belong to the same group. Do not join a slot that a member of another group has already booked.\nDo not reserve multiple slots in advance.\n\n\n\n\nMonday slots: in person or online.\n\nYou choose whether we meet in room HB-108 or via Zoom. After booking, send an email to dominik.liebl@ku.de stating which option your group wants.\n\n\n\nTuesday slots: online only.\n\nAll Tuesday meetings take place via Zoom. No email is needed.\n\n\n\n\nAll online meetings take place in this Zoom room:\nJoin the Zoom meeting",
+    "text": "Booking a Meeting Slot\nBook your group’s weekly meeting in the online planner:\nBook a meeting slot\n\n\n\nOne slot per group per week. A slot holds up to three participants, all from the same group. Do not join a slot booked by another group, and do not book several slots in advance.\n\nMonday: in person (HB-108) or via Zoom, your choice. After booking, email dominik.liebl@ku.de which option your group wants.\n\nTuesday: Zoom only. No email needed.\n\n\nAll online meetings use this Zoom room:\nhttps://kuei.zoom-x.de/j/66424019307",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Seminar Organization</span>"
     ]
@@ -34,7 +34,7 @@
     "href": "index.html#seminar-rules",
     "title": "Statistics Seminar",
     "section": "Seminar Rules",
-    "text": "Seminar Rules\n\n\nGroups: two to three students each.\n\nGrading:\n\n80% seminar thesis\n20% presentation, in which every group member speaks.\n\n\n\nSeminar thesis:\n\n\nLength: 8–12 pages main text, including figures and tables; title page, table of contents, references, and appendix do not count.\n\nFormat: PDF with 12 pt font, 1.5 line spacing, and 2.5 cm margins. The thesis templates (Chapter 2) already meet these requirements.\n\nCode: Only short snippets in the main text. Submit the full code separately so that all results can be reproduced (fixed random seed).\n\nSubmission: thesis.pdf and a ZIP file of your complete thesis folder (text, code, and literature). Deadline: TBA.\n\n\n\nExam registration (via campus.KU) deadline: January 21.",
+    "text": "Seminar Rules\n\n\nExam registration: via campus.KU by January 21.\n\nGrading:\n\n80% seminar thesis\n20% presentation (every group member speaks)\n\n\n\nSeminar thesis:\n\n\nLength: 6–12 pages of main text, including figures and tables. Title page, table of contents, references, and appendix do not count.\n\nFormat: PDF, 12 pt font, 1.5 line spacing, 2.5 cm margins. The thesis template (Chapter 2) already meets these requirements.\n\nCode: Only short snippets in the main text. Submit the full code separately so that all results are reproducible (fix the random seed).\n\nSubmission: Email your thesis PDF and code file(s) to dominik.liebl@ku.de. Deadline: Friday, January 22, before midnight.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Seminar Organization</span>"
     ]
@@ -44,7 +44,7 @@
     "href": "index.html#groups-and-topics",
     "title": "Statistics Seminar",
     "section": "Groups and Topics",
-    "text": "Groups and Topics\nThe groups are formed, and each group has its topic:\n\n\nGroup\nTopic\n\n\n\n1\n\nREG: Linear & Ridge Regression Analysis\n\n\n2\n\nDEN: Nonparametric Density Estimation\n\n\n3\n\nTES: (Multiple) Testing\n\n\n\n⚠️ Being assigned to a group does not replace the official course and exam registration via campus.KU.",
+    "text": "Groups and Topics\nEach group has two to three students. The groups and their topics:\n\n\nGroup\nTopic\n\n\n\n1\n\nREG: Linear & Ridge Regression Analysis\n\n\n2\n\nDEN: Nonparametric Density Estimation\n\n\n3\n\nTES: (Multiple) Testing\n\n\n\n⚠️ Your group assignment does not replace the official course and exam registration via campus.KU.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Seminar Organization</span>"
     ]
@@ -54,7 +54,7 @@
     "href": "index.html#ewhiteboard",
     "title": "Statistics Seminar",
     "section": "eWhiteboard",
-    "text": "eWhiteboard\nWe use the following eWhiteboard during the seminar meetings:\nOpen the eWhiteboard (PDF)",
+    "text": "eWhiteboard\nWe use this eWhiteboard in the seminar meetings:\nOpen the eWhiteboard (PDF)",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Seminar Organization</span>"
     ]
